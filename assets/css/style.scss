@@ -27,6 +27,7 @@ ul {
 header {
   .top {
     padding: 5px 0;
+    background-color: rgb(238, 238, 238);
     .USD {
       display: flex;
       justify-content: start;
@@ -142,17 +143,16 @@ header {
   }
   .mid {
     padding: 25px 15px;
-    .svgs {
+    .all{
+      align-items: center;
+    }
+  
+    .inputs {
       display: flex;
       justify-content: end;
-      svg {
-        margin-left: 10px;
-      }
-    }
-    .inputs {
       input {
         border: 1px solid #e2e2e2;
-        width: 60%;
+        width: 50%;
         padding: 13px 20px;
         border-radius: 5px 0 0 5px;
         font-size: 13px;
@@ -179,13 +179,12 @@ header {
         -moz-appearance: none;
         appearance: none;
         transition: 0.3s ease-in-out;
-        width: 20%;
+        width: 30%;
         height: 47px;
         border-top: 1.5px solid var(--theme-gray);
         border-bottom: 1.5px solid var(--theme-gray);
       }
-      button {
-        flex-grow: 1;
+      button {        
         border: none;
         padding: 0;
         font-size: 16px;
@@ -199,6 +198,93 @@ header {
           color: #fff;
         }
       }
+    }
+  }
+  .svgs{
+    
+      display: flex;
+      justify-content: end;
+      svg {
+        margin-left: 20px;
+      } 
+    
+    .svgCompare{
+      position: relative;
+      .svg-Compare-span{
+        position: absolute;
+        background-color: #f7ba01;        
+        top: -2px;
+        right: -8px;
+        border-radius: 100%;
+        height: 15px;
+        width : 15px;
+        display: flex;
+        justify-content: center;
+        
+          span{
+            font-size: 10px;
+          } 
+      }
+    }
+    .svgLove{
+      position: relative;
+      .svg-Love-span{
+        position: absolute;
+        background-color: #f7ba01;        
+        top: -2px;
+        right: -8px;
+        border-radius: 100%;
+        height: 15px;
+        width : 15px;
+        display: flex;
+        justify-content: center;
+        
+          span{
+            font-size: 10px;
+          } 
+      }
+    }
+    .shopBag{
+      position: relative;
+      .svg-shopBag-span{
+        position: absolute;
+        background-color: #f7ba01;        
+        top: -2px;
+        right: -8px;
+        border-radius: 100%;
+        height: 15px;
+        width : 15px;
+        display: flex;
+        justify-content: center;
+        
+          span{
+            font-size: 10px;
+          } 
+      }
+    }
+  }
+  .buttom{
+    background-color:#0465D2;
+    padding: 25px 0;
+    
+    .button-all-categories{
+      background-color: #025bbf ;
+      color: white;
+      padding: 25px 0;
+      padding-right: 50px;
+      padding-left: 25px;      
+      font-size: 14px !important;
+      font-family: bold;
+      
+      i{
+        
+        margin-right: 20px;
+      }
+      .fa-angle-down{
+        margin-left: 20px;
+      }
+      
+      
     }
   }
 }
