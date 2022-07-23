@@ -5,17 +5,34 @@
   font-family: regular;
 }
 
+@media (max-width: 576px) {
+  header .top .all {
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+  }
+  header .top .all a {
+    font-size: 13px !important;
+    font-family: thin !important;
+  }
+  header .mid {
+    display: none;
+  }
+  header .buttom {
+    display: none;
+  }
+}
 @font-face {
   font-family: regular;
-  src: url(../assets/fonts/Jost-Regular.ttf);
+  src: url(../fonts/Jost-Medium.ttf);
 }
 @font-face {
   font-family: bold;
-  src: url(../assets/fonts/Jost-Bold.ttf);
+  src: url(../fonts/Jost-Bold.ttf);
 }
 @font-face {
   font-family: thin;
-  src: url(../assets/fonts/Jost-Light.ttf);
+  src: url(../fonts/Jost-Light.ttf);
 }
 a {
   text-decoration: none;
@@ -255,7 +272,7 @@ header .svgs .shopBag .svg-shopBag-span span {
   font-size: 10px;
 }
 header .buttom {
-  background-color: #0465D2;
+  background-color: #0465d2;
   padding: 25px 0;
 }
 header .buttom .button-all-categories {
@@ -272,4 +289,14 @@ header .buttom .button-all-categories i {
 }
 header .buttom .button-all-categories .fa-angle-down {
   margin-left: 20px;
+}
+header .buttom .right-categories {
+  display: flex;
+  justify-content: end;
+}
+header .buttom .right-categories a {
+  font-size: 14px !important;
+  color: #e2e2e2;
+  font-family: bold;
+  margin-left: 35px;
 }/*# sourceMappingURL=style.css.map */
