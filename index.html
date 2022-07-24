@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -63,27 +64,24 @@
                 placeholder="Search for your item's type....."
               />
               <div class="all-category-select" tabindex="0">
-                <span class="current">All Category</span>
-                <ul class="list d-none">
-                  <li data-value="" class="option selected focus">
-                    All Category
-                  </li>
-                  <li data-value="accessories" class="option">Accessories</li>
-                  <li data-value="best-seller" class="option">Best Seller</li>
-                  <li data-value="camera" class="option">Camera</li>
-                  <li data-value="computer" class="option">Computer</li>
-                  <li data-value="featured" class="option">Featured</li>
-                  <li data-value="gaming" class="option">Gaming</li>
-                  <li data-value="headphones" class="option">Headphones</li>
-                  <li data-value="hot-sell" class="option">Hot Sell</li>
-                  <li data-value="mobile-tablet" class="option">
-                    Mobile &amp; Tablet
-                  </li>
-                  <li data-value="trend" class="option">Trend</li>
-                  <li data-value="tv-smart-box" class="option">
-                    TV &amp; Smart Box
-                  </li>
-                </ul>
+                <select name="" id="">
+                  <option value="">All Category</option>
+                  <option value="">Accessories</option>
+                  <option value="">Best Seller</option>
+                  <option value="">Camera</option>
+                  <option value="">Computer</option>
+                  <option value="">Featured</option>
+                  <option value="">Gaming</option>
+                  <option value="">Headphones</option>
+                  <option value="">Hot Sell</option>
+                  <option value="">Mobile & Tablet</option>
+                  <option value="">Trend</option>
+                  <option value="">TV & Smart Box</option>
+
+                  
+
+                </select>
+                
               </div>
               <button class="btn-submit" type="submit">
                 <svg
@@ -184,6 +182,21 @@
                   class="fas fa-angle-down"
                 ></i
               ></a>
+              <div class="all-catogories-catalog">
+                <ul>
+                  <li>Acessories & Parts <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Cables & Adapters <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Batteries <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Bags & Cases</li>
+                  <li>Electronic Cigarettes</li>
+                  <li>Audio & Video</li>
+                  <li>Televisions</li>
+                  <li>TV Receivers</li>
+                  <li>Projectors <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Audio Amplifier Boards</li>
+                  <li>TV Sticks</li>
+                </ul>
+              </div>
             </div>
             <div class="col-xl-9 col-lg-9 right-categories">
                 <a href=""> HOME <i class="fas fa-angle-down" ></i </a>
@@ -222,6 +235,9 @@
         </div>
       </section>
     </header>
+    <script src="assets/js/jquery.js"></script>     
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>    
     <script src="assets/js/main.js"></script>
   </body>
 </html>
