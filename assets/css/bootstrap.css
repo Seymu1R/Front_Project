@@ -653,7 +653,14 @@ progress {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) {  
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1024px) {
   .container-lg,
   .container-md,
   .container-sm,
@@ -661,6 +668,7 @@ progress {
     max-width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
   .container-xl,
   .container-lg,
@@ -817,7 +825,7 @@ progress {
     width: 16.6666666667%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -1454,7 +1462,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .col-lg-auto {
     flex: 0 0 auto;
     width: auto;
