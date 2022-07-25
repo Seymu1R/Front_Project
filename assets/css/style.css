@@ -780,13 +780,12 @@ header .buttom .button-all-categories .fa-angle-down {
 header .buttom .all-catogories-catalog {
   width: 275.5px;
   position: fixed;
-  background: #fff;
   color: #7d7d7d;
   top: 205px;
-  height: 0 !important;
 }
 header .buttom .all-catogories-catalog ul {
   padding: 0;
+  background-color: #fff;
 }
 header .buttom .all-catogories-catalog ul li {
   padding: 5px 50px 5px 20px;
@@ -795,6 +794,7 @@ header .buttom .all-catogories-catalog ul li {
   display: flex;
   align-items: center;
   transition: 1s all;
+  cursor: pointer;
 }
 header .buttom .all-catogories-catalog ul li i {
   position: absolute;
@@ -809,9 +809,62 @@ header .buttom .right-categories {
   display: flex;
   justify-content: end;
 }
+header .buttom .right-categories .home-cataloge-1 {
+  position: relative;
+}
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 {
+  position: fixed;
+  top: 210px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s all;
+  width: 300px;
+  opacity: 0;
+  visibility: hidden;
+}
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 P {
+  margin-left: 20px;
+  color: #7d7d7d;
+  cursor: pointer;
+}
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 P:hover {
+  color: #0465d2;
+}
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 P:focus-visible {
+  color: red;
+}
+header .buttom .right-categories .home-cataloge-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .right-categories .home-cataloge-1:hover::before {
+  width: 100%;
+}
+header .buttom .right-categories .home-cataloge-1:hover .home-cataloge-2 {
+  background-color: #ffffff;
+  height: 310px;
+  opacity: 1;
+  visibility: visible;
+}
 header .buttom .right-categories a {
   font-size: 14px !important;
   color: #e2e2e2;
   font-family: bold;
   margin-left: 35px;
+}
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 {
+  position: fixed;
+}
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .left-catalog li {
+  color: black;
+}
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .right-catalog img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
