@@ -956,13 +956,37 @@ header .buttom .pages-categories-1 {
   position: relative;
   margin-left: 35px;
 }
+header .buttom .pages-categories-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .pages-categories-1:hover::before {
+  width: 100%;
+}
+header .buttom .pages-categories-1:hover .pages-categories-2 {
+  opacity: 1;
+  visibility: visible;
+  height: 400px;
+}
 header .buttom .pages-categories-1 .pages-categories-2 {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   background-color: #ffffff;
   width: 220px;
   top: 205px;
   height: 320px;
   padding-top: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s all;
 }
 header .buttom .pages-categories-1 .pages-categories-2 ul li {
   padding: 10px 0;
@@ -970,4 +994,119 @@ header .buttom .pages-categories-1 .pages-categories-2 ul li {
 header .buttom .pages-categories-1 .pages-categories-2 ul li a {
   padding-top: 20px;
   color: #7d7d7d;
+}
+header .buttom .special-categories-1 {
+  margin-left: 35px;
+  position: relative;
+}
+header .buttom .special-categories-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .special-categories-1:hover::before {
+  width: 100%;
+}
+header .buttom .special-categories-1:hover .specila-categories-2 {
+  opacity: 1;
+  visibility: visible;
+  height: 400px;
+}
+header .buttom .special-categories-1 .specila-categories-2 {
+  position: fixed;
+  background-color: #ffffff;
+  width: 1195px;
+  left: 178px;
+  top: 205px;
+  height: 100%;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s all;
+}
+header .buttom .special-categories-1 .specila-categories-2 ul {
+  padding: 20px 0;
+  margin-left: 20px;
+}
+header .buttom .special-categories-1 .specila-categories-2 ul li {
+  padding: 5px 0;
+  color: #7d7d7d;
+}
+header .buttom .special-categories-1 .specila-categories-2 ul li:first-child {
+  padding-top: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: bold;
+}
+header .buttom .special-categories-1 .specila-categories-2 ul li:last-child {
+  padding-top: 20px;
+  color: #f7ba01;
+  font-size: 14px;
+  font-family: bold;
+}
+header .buttom .store-list-categories-1 {
+  position: relative;
+  margin-left: 35px;
+}
+header .buttom .store-list-categories-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .store-list-categories-1:hover::before {
+  width: 100%;
+}
+header .buttom .store-list-categories-1:hover .store-list-categories-2 {
+  opacity: 1;
+  visibility: visible;
+  height: 150px;
+}
+header .buttom .store-list-categories-1 .store-list-categories-2 {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  background-color: #ffffff;
+  width: 200px;
+  top: 205px;
+  padding-top: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s all;
+}
+header .buttom .store-list-categories-1 .store-list-categories-2 ul li {
+  padding: 10px 0;
+}
+header .buttom .store-list-categories-1 .store-list-categories-2 ul li a {
+  padding-top: 20px;
+  color: #7d7d7d;
+}
+header .buttom .contact-categories-1 {
+  margin-left: 35px;
+  position: relative;
+}
+header .buttom .contact-categories-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .contact-categories-1:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

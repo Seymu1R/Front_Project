@@ -6,6 +6,7 @@
 }
 @import "_responsive.scss";
 @import "_nice-select";
+@import "_main.scss";
 
 @font-face {
   font-family: regular;
@@ -347,7 +348,7 @@ header {
       display: flex;
       justify-content: end;
       .home-cataloge-1 {
-        position: relative;        
+        position: relative;
         margin-left: 35px;
         .home-cataloge-2 {
           position: fixed;
@@ -397,10 +398,10 @@ header {
       a {
         font-size: 14px !important;
         color: #e2e2e2;
-        font-family: bold;        
+        font-family: bold;
       }
-      .categories-catalog-1 {       
-       margin-left: 35px;
+      .categories-catalog-1 {
+        margin-left: 35px;
         position: relative;
         &::before {
           content: "";
@@ -412,18 +413,16 @@ header {
           position: absolute;
           transition: 0.5s all;
           border-radius: 10px;
-          
         }
         &:hover {
           &::before {
             width: 100%;
           }
-          & .categories-catalog-2{
+          & .categories-catalog-2 {
             opacity: 1;
             visibility: visible;
             height: 100%;
           }
-         
         }
         .categories-catalog-2 {
           background-color: #ffffff;
@@ -435,10 +434,8 @@ header {
           opacity: 0;
           visibility: hidden;
           overflow: hidden;
-          transition: .8s all;
-          
-          
-          
+          transition: 0.8s all;
+
           .left-catalog {
             ul {
               li {
@@ -461,7 +458,7 @@ header {
         }
       }
     }
-    .shop-categories-1{
+    .shop-categories-1 {
       margin-left: 35px;
       position: relative;
       &::before {
@@ -474,32 +471,31 @@ header {
         position: absolute;
         transition: 0.5s all;
         border-radius: 10px;
-        
       }
       &:hover {
         &::before {
           width: 100%;
         }
-        & .shop-categories-2{
+        & .shop-categories-2 {
           opacity: 1;
           visibility: visible;
           height: 400px;
         }
-       
       }
-      .shop-categories-2{
+      .shop-categories-2 {
         opacity: 0;
         visibility: hidden;
         position: fixed;
-        background-color:#ffffff;
+        background-color: #ffffff;
         left: 178px;
         top: 205px;
         width: 1195px;
         height: 0;
         overflow: hidden;
-        transition: .8s all;
-        ul{
-          li{
+        transition: 0.8s all;
+        
+        ul {
+          li {
             &:first-child {
               padding-top: 20px;
               color: black;
@@ -512,33 +508,175 @@ header {
         }
       }
     }
-    .pages-categories-1{
+    .pages-categories-1 {
       position: relative;
       margin-left: 35px;
-      .pages-categories-2{
+      &::before {
+        content: "";
+        height: 6px;
+        background-color: #f7ba01;
+        width: 0;
+        bottom: -24px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s all;
+        border-radius: 10px;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        & .pages-categories-2 {
+          opacity: 1;
+          visibility: visible;
+          height: 400px;
+        }
+      }
+      .pages-categories-2 {
+        opacity: 0;
+        visibility: hidden;
         position: fixed;
-        background-color:#ffffff;
+        background-color: #ffffff;
         width: 220px;
         top: 205px;
         height: 320px;
         padding-top: 10px;
-        ul{
-          
-          li{
-           
-           
+        height: 0;
+        overflow: hidden;
+        transition: 0.8s all;
+        ul {
+          li {
             padding: 10px 0;
-            a{
-              
-             
-                padding-top: 20px;
-                color:#7d7d7d;
-                
-              
-              
-              
+            a {
+              padding-top: 20px;
+              color: #7d7d7d;
             }
           }
+        }
+      }
+    }
+    .special-categories-1{
+      margin-left: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        height: 6px;
+        background-color: #f7ba01;
+        width: 0;
+        bottom: -24px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s all;
+        border-radius: 10px;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        & .specila-categories-2 {
+          opacity: 1;
+          visibility: visible;
+          height: 400px;
+        }
+      }
+      .specila-categories-2{        
+        position: fixed;
+        background-color: #ffffff;
+        width: 1195px;
+        left: 178px;
+        top: 205px;
+        height: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 0.8s all;
+        ul{
+          padding: 20px 0;
+          margin-left: 20px;
+          li{
+            &:first-child {
+              padding-top: 20px;
+              color: black;
+              font-size: 16px;
+              font-family: bold;
+            }
+            &:last-child {
+              padding-top: 20px;
+              color:#f7ba01;
+              font-size: 14px;
+              font-family: bold;
+            }
+
+            padding: 5px 0;
+            color: #7d7d7d;
+          }
+        }
+      }
+    }
+    .store-list-categories-1{
+      position: relative;
+      margin-left: 35px;
+      &::before {
+        content: "";
+        height: 6px;
+        background-color: #f7ba01;
+        width: 0;
+        bottom: -24px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s all;
+        border-radius: 10px;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        & .store-list-categories-2 {
+          opacity: 1;
+          visibility: visible;
+          height: 150px;
+          
+        }
+      }
+      .store-list-categories-2{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        background-color: #ffffff;
+        width: 200px;
+        top: 205px;       
+        padding-top: 10px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.8s all;
+        ul {
+          li {
+            padding: 10px 0;
+            a {
+              padding-top: 20px;
+              color: #7d7d7d;
+            }
+          }
+        }
+      }
+    }
+    .contact-categories-1{
+      margin-left: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        height: 6px;
+        background-color: #f7ba01;
+        width: 0;
+        bottom: -24px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s all;
+        border-radius: 10px;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
         }
       }
     }

@@ -14,8 +14,8 @@ getSellwithus.addEventListener("click", (e) => {
 });
 
 $(document).ready(function(){
-    $(".button-all-categories").click(function(){
-        
+    $(".button-all-categories").click(function(e){
+      e.preventDefault();        
         $(".all-catogories-catalog").slideToggle();
       });  
 
