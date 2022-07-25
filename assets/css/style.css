@@ -811,6 +811,7 @@ header .buttom .right-categories {
 }
 header .buttom .right-categories .home-cataloge-1 {
   position: relative;
+  margin-left: 35px;
 }
 header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 {
   position: fixed;
@@ -857,14 +858,116 @@ header .buttom .right-categories a {
   font-size: 14px !important;
   color: #e2e2e2;
   font-family: bold;
+}
+header .buttom .right-categories .categories-catalog-1 {
   margin-left: 35px;
+  position: relative;
+}
+header .buttom .right-categories .categories-catalog-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .right-categories .categories-catalog-1:hover::before {
+  width: 100%;
+}
+header .buttom .right-categories .categories-catalog-1:hover .categories-catalog-2 {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 {
+  background-color: #ffffff;
+  width: 78%;
   position: fixed;
+  height: 0;
+  top: 205px;
+  left: 177px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.8s all;
 }
-header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .left-catalog li {
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .left-catalog ul li {
+  color: #7d7d7d;
+  padding: 10px 0;
+}
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .left-catalog ul li:first-child {
   color: black;
+  font-size: 16px;
+  font-family: bold;
 }
 header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .right-catalog img {
   width: 100%;
+  height: 100%;
+}
+header .buttom .shop-categories-1 {
+  margin-left: 35px;
+  position: relative;
+}
+header .buttom .shop-categories-1::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+header .buttom .shop-categories-1:hover::before {
+  width: 100%;
+}
+header .buttom .shop-categories-1:hover .shop-categories-2 {
+  opacity: 1;
+  visibility: visible;
+  height: 400px;
+}
+header .buttom .shop-categories-1 .shop-categories-2 {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  background-color: #ffffff;
+  left: 178px;
+  top: 205px;
+  width: 1195px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.8s all;
+}
+header .buttom .shop-categories-1 .shop-categories-2 ul li {
+  padding: 10px 0;
+  color: #7d7d7d;
+}
+header .buttom .shop-categories-1 .shop-categories-2 ul li:first-child {
+  padding-top: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: bold;
+}
+header .buttom .pages-categories-1 {
+  position: relative;
+  margin-left: 35px;
+}
+header .buttom .pages-categories-1 .pages-categories-2 {
+  position: fixed;
+  background-color: #ffffff;
+  width: 220px;
+  top: 205px;
+  height: 320px;
+  padding-top: 10px;
+}
+header .buttom .pages-categories-1 .pages-categories-2 ul li {
+  padding: 10px 0;
+}
+header .buttom .pages-categories-1 .pages-categories-2 ul li a {
+  padding-top: 20px;
+  color: #7d7d7d;
 }/*# sourceMappingURL=style.css.map */
