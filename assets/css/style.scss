@@ -7,6 +7,7 @@
 @import "_responsive.scss";
 @import "_nice-select";
 @import "_main.scss";
+@import "_footer.scss";
 
 @font-face {
   font-family: regular;
@@ -316,9 +317,10 @@ header {
     }
     .all-catogories-catalog {
       width: 275.5px;
-      position: fixed;
+      position: absolute;
       color: #7d7d7d;
-      top: 205px;
+      z-index: 9;
+      top: 190px;
       ul {
         padding: 0;
         background-color: #fff;
@@ -347,11 +349,25 @@ header {
     .right-categories {
       display: flex;
       justify-content: end;
-      .home-cataloge-1 {
-        position: relative;
+      .home-cataloge-1 {        
         margin-left: 35px;
+        .home-cataloge-3{
+          position: relative;
+          &::before {
+            content: "";
+            height: 6px;
+            background-color: #f7ba01;
+            width: 0;
+            bottom: -24px;
+            left: 0;
+            position: absolute;
+            transition: 0.5s all;
+            border-radius: 10px;
+          }
+        }
         .home-cataloge-2 {
-          position: fixed;
+          position: absolute;
+          z-index: 999;
           top: 210px;
           height: 0;
           overflow: hidden;
@@ -371,20 +387,10 @@ header {
             }
           }
         }
-        &::before {
-          content: "";
-          height: 6px;
-          background-color: #f7ba01;
-          width: 0;
-          bottom: -24px;
-          left: 0;
-          position: absolute;
-          transition: 0.5s all;
-          border-radius: 10px;
-        }
+        
 
         &:hover {
-          &::before {
+          .home-cataloge-3::before {
             width: 100%;
           }
           & .home-cataloge-2 {
@@ -402,20 +408,25 @@ header {
       }
       .categories-catalog-1 {
         margin-left: 35px;
-        position: relative;
-        &::before {
-          content: "";
-          height: 6px;
-          background-color: #f7ba01;
-          width: 0;
-          bottom: -24px;
-          left: 0;
-          position: absolute;
-          transition: 0.5s all;
-          border-radius: 10px;
-        }
-        &:hover {
+        
+        .categories-catalog-3{
+          position: relative;
           &::before {
+            content: "";
+            height: 6px;
+            background-color: #f7ba01;
+            width: 0;
+            bottom: -24px;
+            left: 0;
+            position: absolute;
+            transition: 0.5s all;
+            border-radius: 10px;
+          }
+
+        }
+        
+        &:hover {
+          .categories-catalog-3::before {
             width: 100%;
           }
           & .categories-catalog-2 {
@@ -427,14 +438,15 @@ header {
         .categories-catalog-2 {
           background-color: #ffffff;
           width: 78%;
-          position: fixed;
+          position:absolute;
           height: 0;
-          top: 205px;
-          left: 177px;
+          top: 207px;
+          left: 135px;
           opacity: 0;
           visibility: hidden;
           overflow: hidden;
           transition: 0.8s all;
+          z-index: 999;
 
           .left-catalog {
             ul {
@@ -459,21 +471,24 @@ header {
       }
     }
     .shop-categories-1 {
-      margin-left: 35px;
-      position: relative;
-      &::before {
-        content: "";
-        height: 6px;
-        background-color: #f7ba01;
-        width: 0;
-        bottom: -24px;
-        left: 0;
-        position: absolute;
-        transition: 0.5s all;
-        border-radius: 10px;
-      }
-      &:hover {
+      margin-left: 35px;      
+      .shop-categories-3{
+        position: relative;
         &::before {
+          content: "";
+          height: 6px;
+          background-color: #f7ba01;
+          width: 0;
+          bottom: -24px;
+          left: 0;
+          position: absolute;
+          transition: 0.5s all;
+          border-radius: 10px;
+        }
+      }
+      
+      &:hover {
+        .shop-categories-3::before {
           width: 100%;
         }
         & .shop-categories-2 {
@@ -485,7 +500,8 @@ header {
       .shop-categories-2 {
         opacity: 0;
         visibility: hidden;
-        position: fixed;
+        position: absolute;
+        z-index: 9999999;
         background-color: #ffffff;
         left: 178px;
         top: 205px;
@@ -508,22 +524,26 @@ header {
         }
       }
     }
-    .pages-categories-1 {
-      position: relative;
+    .pages-categories-1 {      
       margin-left: 35px;
-      &::before {
-        content: "";
-        height: 6px;
-        background-color: #f7ba01;
-        width: 0;
-        bottom: -24px;
-        left: 0;
-        position: absolute;
-        transition: 0.5s all;
-        border-radius: 10px;
-      }
-      &:hover {
+      .pages-categories-3{
+        position: relative;
         &::before {
+          content: "";
+          height: 6px;
+          background-color: #f7ba01;
+          width: 0;
+          bottom: -24px;
+          left: 0;
+          position: absolute;
+          transition: 0.5s all;
+          border-radius: 10px;
+        }
+
+      }
+      
+      &:hover {
+        .pages-categories-3::before {
           width: 100%;
         }
         & .pages-categories-2 {
@@ -535,7 +555,8 @@ header {
       .pages-categories-2 {
         opacity: 0;
         visibility: hidden;
-        position: fixed;
+        position: absolute;
+        z-index: 9999999999;
         background-color: #ffffff;
         width: 220px;
         top: 205px;
@@ -557,35 +578,40 @@ header {
     }
     .special-categories-1{
       margin-left: 35px;
-      position: relative;
-      &::before {
-        content: "";
-        height: 6px;
-        background-color: #f7ba01;
-        width: 0;
-        bottom: -24px;
-        left: 0;
-        position: absolute;
-        transition: 0.5s all;
-        border-radius: 10px;
-      }
-      &:hover {
+      
+      .special-categories-3{
+        position: relative;
         &::before {
+          content: "";
+          height: 6px;
+          background-color: #f7ba01;
+          width: 0;
+          bottom: -24px;
+          left: 0;
+          position: absolute;
+          transition: 0.5s all;
+          border-radius: 10px;
+        }
+      }
+      
+      &:hover {
+        .special-categories-3::before {
           width: 100%;
         }
         & .specila-categories-2 {
           opacity: 1;
           visibility: visible;
-          height: 400px;
+          height: 100%;
         }
       }
       .specila-categories-2{        
-        position: fixed;
+        position: absolute;
+        z-index: 9999999;
         background-color: #ffffff;
         width: 1195px;
         left: 178px;
         top: 205px;
-        height: 100%;
+        height: 0;
         opacity: 0;
         height: 0;
         overflow: hidden;
@@ -614,21 +640,25 @@ header {
       }
     }
     .store-list-categories-1{
-      position: relative;
+      
       margin-left: 35px;
-      &::before {
-        content: "";
-        height: 6px;
-        background-color: #f7ba01;
-        width: 0;
-        bottom: -24px;
-        left: 0;
-        position: absolute;
-        transition: 0.5s all;
-        border-radius: 10px;
-      }
-      &:hover {
+      .store-list-categories-3{
+        position: relative;
         &::before {
+          content: "";
+          height: 6px;
+          background-color: #f7ba01;
+          width: 0;
+          bottom: -24px;
+          left: 0;
+          position: absolute;
+          transition: 0.5s all;
+          border-radius: 10px;
+        }
+      }
+      
+      &:hover {
+        .store-list-categories-3::before {
           width: 100%;
         }
         & .store-list-categories-2 {
@@ -641,7 +671,8 @@ header {
       .store-list-categories-2{
         opacity: 0;
         visibility: hidden;
-        position: fixed;
+        position: absolute;
+        z-index: 8989898;
         background-color: #ffffff;
         width: 200px;
         top: 205px;       

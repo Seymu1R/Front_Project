@@ -1,0 +1,34 @@
+.smart-watch{
+    background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    .all{
+        h2{
+            color: #ffffff;
+        }
+        img{
+            background-color: #ff6000;
+        }
+        #offer{
+            color: #ff6000;
+        }
+        #upto{
+            color: #ff6000;
+        }
+        #off{
+            color: #ffffff;
+        }
+        #amount{
+            color: #ffffff;
+            background-color: #ff6000;
+        }
+        a{
+            padding: 10px 0;
+            display: block;
+            width: 100%;
+            color: #ff6000;
+            background-color: #ffffff;
+            text-align: center;
+        }
+    }
+}

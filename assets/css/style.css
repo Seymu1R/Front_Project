@@ -481,6 +481,89 @@
   display: block;
 }
 
+#slider {
+  background-color: #f3f2ee;
+  padding: 100px 0;
+}
+#slider .slider-content img {
+  z-index: -111;
+}
+#slider .slider-content h5 {
+  font-size: 64px;
+  font-weight: 900;
+}
+#slider .slider-content h2 {
+  font-size: 45px;
+  font-family: thin;
+}
+#slider .slider-content p span {
+  color: rgb(24, 99, 212);
+}
+#slider .slider-content a {
+  padding: 10px 20px;
+  background-color: rgb(24, 99, 212);
+  color: #fff;
+}
+#slider .slider-prev {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  color: #7d7d7d;
+}
+#slider .slider-prev i {
+  font-size: 10px;
+}
+#slider .slider-next {
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  color: #7d7d7d;
+}
+#slider .slider-next i {
+  font-size: 10px;
+}
+
+.smart-watch {
+  background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.smart-watch .all h2 {
+  color: #ffffff;
+}
+.smart-watch .all img {
+  background-color: #ff6000;
+}
+.smart-watch .all #offer {
+  color: #ff6000;
+}
+.smart-watch .all #upto {
+  color: #ff6000;
+}
+.smart-watch .all #off {
+  color: #ffffff;
+}
+.smart-watch .all #amount {
+  color: #ffffff;
+  background-color: #ff6000;
+}
+.smart-watch .all a {
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  color: #ff6000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
 @font-face {
   font-family: regular;
   src: url(../fonts/Jost-Medium.ttf);
@@ -779,9 +862,10 @@ header .buttom .button-all-categories .fa-angle-down {
 }
 header .buttom .all-catogories-catalog {
   width: 275.5px;
-  position: fixed;
+  position: absolute;
   color: #7d7d7d;
-  top: 205px;
+  z-index: 9;
+  top: 190px;
 }
 header .buttom .all-catogories-catalog ul {
   padding: 0;
@@ -810,11 +894,25 @@ header .buttom .right-categories {
   justify-content: end;
 }
 header .buttom .right-categories .home-cataloge-1 {
-  position: relative;
   margin-left: 35px;
 }
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-3 {
+  position: relative;
+}
+header .buttom .right-categories .home-cataloge-1 .home-cataloge-3::before {
+  content: "";
+  height: 6px;
+  background-color: #f7ba01;
+  width: 0;
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
 header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 {
-  position: fixed;
+  position: absolute;
+  z-index: 999;
   top: 210px;
   height: 0;
   overflow: hidden;
@@ -834,18 +932,7 @@ header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 P:hover {
 header .buttom .right-categories .home-cataloge-1 .home-cataloge-2 P:focus-visible {
   color: red;
 }
-header .buttom .right-categories .home-cataloge-1::before {
-  content: "";
-  height: 6px;
-  background-color: #f7ba01;
-  width: 0;
-  bottom: -24px;
-  left: 0;
-  position: absolute;
-  transition: 0.5s all;
-  border-radius: 10px;
-}
-header .buttom .right-categories .home-cataloge-1:hover::before {
+header .buttom .right-categories .home-cataloge-1:hover .home-cataloge-3::before {
   width: 100%;
 }
 header .buttom .right-categories .home-cataloge-1:hover .home-cataloge-2 {
@@ -861,9 +948,11 @@ header .buttom .right-categories a {
 }
 header .buttom .right-categories .categories-catalog-1 {
   margin-left: 35px;
+}
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-3 {
   position: relative;
 }
-header .buttom .right-categories .categories-catalog-1::before {
+header .buttom .right-categories .categories-catalog-1 .categories-catalog-3::before {
   content: "";
   height: 6px;
   background-color: #f7ba01;
@@ -874,7 +963,7 @@ header .buttom .right-categories .categories-catalog-1::before {
   transition: 0.5s all;
   border-radius: 10px;
 }
-header .buttom .right-categories .categories-catalog-1:hover::before {
+header .buttom .right-categories .categories-catalog-1:hover .categories-catalog-3::before {
   width: 100%;
 }
 header .buttom .right-categories .categories-catalog-1:hover .categories-catalog-2 {
@@ -885,14 +974,15 @@ header .buttom .right-categories .categories-catalog-1:hover .categories-catalog
 header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 {
   background-color: #ffffff;
   width: 78%;
-  position: fixed;
+  position: absolute;
   height: 0;
-  top: 205px;
-  left: 177px;
+  top: 207px;
+  left: 135px;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
   transition: 0.8s all;
+  z-index: 999;
 }
 header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .left-catalog ul li {
   color: #7d7d7d;
@@ -909,9 +999,11 @@ header .buttom .right-categories .categories-catalog-1 .categories-catalog-2 .ri
 }
 header .buttom .shop-categories-1 {
   margin-left: 35px;
+}
+header .buttom .shop-categories-1 .shop-categories-3 {
   position: relative;
 }
-header .buttom .shop-categories-1::before {
+header .buttom .shop-categories-1 .shop-categories-3::before {
   content: "";
   height: 6px;
   background-color: #f7ba01;
@@ -922,7 +1014,7 @@ header .buttom .shop-categories-1::before {
   transition: 0.5s all;
   border-radius: 10px;
 }
-header .buttom .shop-categories-1:hover::before {
+header .buttom .shop-categories-1:hover .shop-categories-3::before {
   width: 100%;
 }
 header .buttom .shop-categories-1:hover .shop-categories-2 {
@@ -933,7 +1025,8 @@ header .buttom .shop-categories-1:hover .shop-categories-2 {
 header .buttom .shop-categories-1 .shop-categories-2 {
   opacity: 0;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
+  z-index: 9999999;
   background-color: #ffffff;
   left: 178px;
   top: 205px;
@@ -953,10 +1046,12 @@ header .buttom .shop-categories-1 .shop-categories-2 ul li:first-child {
   font-family: bold;
 }
 header .buttom .pages-categories-1 {
-  position: relative;
   margin-left: 35px;
 }
-header .buttom .pages-categories-1::before {
+header .buttom .pages-categories-1 .pages-categories-3 {
+  position: relative;
+}
+header .buttom .pages-categories-1 .pages-categories-3::before {
   content: "";
   height: 6px;
   background-color: #f7ba01;
@@ -967,7 +1062,7 @@ header .buttom .pages-categories-1::before {
   transition: 0.5s all;
   border-radius: 10px;
 }
-header .buttom .pages-categories-1:hover::before {
+header .buttom .pages-categories-1:hover .pages-categories-3::before {
   width: 100%;
 }
 header .buttom .pages-categories-1:hover .pages-categories-2 {
@@ -978,7 +1073,8 @@ header .buttom .pages-categories-1:hover .pages-categories-2 {
 header .buttom .pages-categories-1 .pages-categories-2 {
   opacity: 0;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
+  z-index: 9999999999;
   background-color: #ffffff;
   width: 220px;
   top: 205px;
@@ -997,9 +1093,11 @@ header .buttom .pages-categories-1 .pages-categories-2 ul li a {
 }
 header .buttom .special-categories-1 {
   margin-left: 35px;
+}
+header .buttom .special-categories-1 .special-categories-3 {
   position: relative;
 }
-header .buttom .special-categories-1::before {
+header .buttom .special-categories-1 .special-categories-3::before {
   content: "";
   height: 6px;
   background-color: #f7ba01;
@@ -1010,21 +1108,22 @@ header .buttom .special-categories-1::before {
   transition: 0.5s all;
   border-radius: 10px;
 }
-header .buttom .special-categories-1:hover::before {
+header .buttom .special-categories-1:hover .special-categories-3::before {
   width: 100%;
 }
 header .buttom .special-categories-1:hover .specila-categories-2 {
   opacity: 1;
   visibility: visible;
-  height: 400px;
+  height: 100%;
 }
 header .buttom .special-categories-1 .specila-categories-2 {
-  position: fixed;
+  position: absolute;
+  z-index: 9999999;
   background-color: #ffffff;
   width: 1195px;
   left: 178px;
   top: 205px;
-  height: 100%;
+  height: 0;
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -1051,10 +1150,12 @@ header .buttom .special-categories-1 .specila-categories-2 ul li:last-child {
   font-family: bold;
 }
 header .buttom .store-list-categories-1 {
-  position: relative;
   margin-left: 35px;
 }
-header .buttom .store-list-categories-1::before {
+header .buttom .store-list-categories-1 .store-list-categories-3 {
+  position: relative;
+}
+header .buttom .store-list-categories-1 .store-list-categories-3::before {
   content: "";
   height: 6px;
   background-color: #f7ba01;
@@ -1065,7 +1166,7 @@ header .buttom .store-list-categories-1::before {
   transition: 0.5s all;
   border-radius: 10px;
 }
-header .buttom .store-list-categories-1:hover::before {
+header .buttom .store-list-categories-1:hover .store-list-categories-3::before {
   width: 100%;
 }
 header .buttom .store-list-categories-1:hover .store-list-categories-2 {
@@ -1076,7 +1177,8 @@ header .buttom .store-list-categories-1:hover .store-list-categories-2 {
 header .buttom .store-list-categories-1 .store-list-categories-2 {
   opacity: 0;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
+  z-index: 8989898;
   background-color: #ffffff;
   width: 200px;
   top: 205px;
