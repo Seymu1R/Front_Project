@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 #detail-shop {
     .detail-shop {
         text-align: center;
@@ -34,7 +35,7 @@
 #detail-product {
     .detail-product {
         .left-product {
-            
+
             position: relative;
 
             .fa-magnifying-glass {
@@ -49,6 +50,7 @@
 
         .right-product {
             padding-left: 20px;
+
             .shop-product-top {
                 i {
                     color: rgb(110, 118, 115);
@@ -204,61 +206,149 @@
             align-items: center;
             justify-content: flex-start;
             padding: 10px 0;
-            svg{
+
+            svg {
                 max-width: 18px;
                 max-height: 18px;
                 overflow: hidden;
                 vertical-align: middle;
             }
         }
-        .venam-product-view{
+
+        .venam-product-view {
             margin-top: 5px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             color: rgb(119, 118, 124);
             padding-bottom: 10px;
-            svg{
+
+            svg {
                 max-width: 14px;
                 max-height: 14px;
                 overflow: hidden;
                 vertical-align: middle;
             }
-            span{
+
+            span {
                 color: black;
             }
         }
-        .product_meta{
-            .sku{
+
+        .product_meta {
+            .sku {
                 display: inline;
             }
-            span{
+
+            span {
                 display: block;
                 padding: 10px 0;
-                a{
+
+                a {
                     color: rgb(119, 118, 124);
                     font-size: 13px;
-                    &:hover{
-                        color:  rgb(255, 96, 0);
+
+                    &:hover {
+                        color: rgb(255, 96, 0);
                     }
                 }
             }
-            
+
         }
-        .venam-product-share{
+
+        .venam-product-share {
             margin-bottom: 20px;
-            .venam-social-icons{
+
+            .venam-social-icons {
                 display: inline;
-                a{
+
+                a {
                     padding: 8px;
                     border-radius: 100%;
                     margin: 0 2px;
-                   i{
-                    color: #fff;
-                   }
+
+                    i {
+                        color: #fff;
+                    }
                 }
             }
         }
-        
+
     }
+}
+
+#tab-menu {
+    padding: 50px 0;
+
+    .tab {
+        border-bottom: 2px solid #a1a1a1;
+
+        .active {
+            border-bottom: 3px solid #f7ba01;
+        }
+
+        button {
+            border: none;
+            padding: 20px 10px;
+
+        }
+    }
+
+    .menu-info-tr {
+        padding: 40px 0 60px 0;
+    }
+
+    #info {
+
+        tr {
+
+            td {
+                padding: 0 20px;
+            }
+
+        }
+
+    }
+}
+
+#product-reviews {
+    img {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .top-review {
+        padding: 50px 0;
+
+
+    }
+
+    p {
+        #first-star {
+            margin-left: 150px;
+        }
+
+        i {
+
+            color: #ff6000;
+        }
+
+    }
+    .right-side{
+        select{
+            width: 100%;
+            border: 1px solid #a1a1a1;
+            option{
+                ul{
+                    width: 100% !important;
+                }
+               
+            }
+            
+        }
+    }
+
+    
+        
+    
 }

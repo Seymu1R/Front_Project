@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 * {
   margin: 0;
   padding: 0;
@@ -531,6 +533,103 @@
   font-size: 10px;
 }
 
+#super-deals {
+  padding: 40px 0;
+}
+#super-deals .right-supers-deals {
+  display: flex;
+  align-items: center;
+}
+#super-deals .right-supers-deals i {
+  cursor: pointer;
+}
+#super-deals .right-supers-deals i:hover {
+  color: #1863d4;
+}
+#super-deals .right-supers-deals span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#super-deals .right-supers-deals span:hover {
+  color: #1863d4;
+}
+#super-deals h3 {
+  display: inline;
+}
+#super-deals .coming-time {
+  display: inline-block;
+}
+#super-deals .coming-time .time-count {
+  padding-left: 20px;
+  display: inline-block;
+  background: #252525;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 6px;
+  width: 52px;
+  line-height: 1;
+  margin: 0 3px 0;
+  padding: 9px 10px;
+  font-size: 9px;
+  width: 47px;
+}
+#super-deals .coming-time .time-count span {
+  display: block;
+  font-size: 20px;
+}
+#super-deals .coming-time .sec {
+  background-color: #f7ba01;
+}
+
+#products-index-html .product-items {
+  position: relative;
+  text-align: center;
+}
+#products-index-html .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#products-index-html .product-items p {
+  color: #ff6000;
+}
+#products-index-html .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#products-index-html .product-items img {
+  width: 100%;
+}
+#products-index-html .product-items .hover-detail {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#products-index-html .product-items .hover-detail .top {
+  background-color: #ffffff;
+}
+#products-index-html .product-items .hover-detail .top svg {
+  margin: 0 15px 10px;
+}
+#products-index-html .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
 .smart-watch {
   background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
   background-position: center;
@@ -767,6 +866,98 @@
 }
 #detail-product .detail-product .venam-product-share .venam-social-icons a i {
   color: #fff;
+}
+
+#tab-menu {
+  padding: 50px 0;
+}
+#tab-menu .tab {
+  border-bottom: 2px solid #a1a1a1;
+}
+#tab-menu .tab .active {
+  border-bottom: 3px solid #f7ba01;
+}
+#tab-menu .tab button {
+  border: none;
+  padding: 20px 10px;
+}
+#tab-menu .menu-info-tr {
+  padding: 40px 0 60px 0;
+}
+#tab-menu #info tr td {
+  padding: 0 20px;
+}
+
+#product-reviews img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+#product-reviews .top-review {
+  padding: 50px 0;
+}
+#product-reviews p #first-star {
+  margin-left: 150px;
+}
+#product-reviews p i {
+  color: #ff6000;
+}
+#product-reviews .right-side select {
+  width: 100%;
+  border: 1px solid #a1a1a1;
+}
+#product-reviews .right-side select option ul {
+  width: 100% !important;
+}
+
+fieldset, label {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 0.8em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+} /* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
 }
 
 @font-face {
