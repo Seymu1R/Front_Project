@@ -1,0 +1,264 @@
+#detail-shop {
+    .detail-shop {
+        text-align: center;
+        padding: 85px 0;
+
+        h2 {
+            font-size: 45px;
+        }
+
+        ul {
+            justify-content: center;
+            display: flex;
+
+            li {
+                &:last-child {
+                    color: rgb(255, 99, 0);
+                }
+
+                margin-left: 20px;
+                color: #a1a1a1;
+                transition: 1s all;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(255, 99, 0);
+                }
+            }
+
+        }
+    }
+
+}
+
+#detail-product {
+    .detail-product {
+        .left-product {
+            
+            position: relative;
+
+            .fa-magnifying-glass {
+                position: absolute;
+                right: 0;
+                top: -20px;
+                color: black;
+                font-size: 20px;
+
+            }
+        }
+
+        .right-product {
+            padding-left: 20px;
+            .shop-product-top {
+                i {
+                    color: rgb(110, 118, 115);
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+
+            .raiting-shop {
+                i {
+                    font-size: 13px;
+                    color: rgb(255, 96, 0);
+                }
+
+                span {
+                    font-size: 15px;
+                    color: rgb(4, 101, 210);
+                }
+            }
+
+            h6 {
+                font-size: 26px;
+                font-family: bold;
+                color: rgb(255, 96, 0);
+                padding: 10px 0;
+            }
+
+            p {
+                color: rgb(110, 118, 115);
+            }
+
+            .coming-time {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                .time-count {
+                    background: #252525;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 8px 12px;
+                    border-radius: 4px;
+                    text-align: center;
+                    margin-left: 6px;
+                    width: 52px;
+                    line-height: 1;
+                    margin: 0 3px 0;
+                    padding: 9px 10px;
+                    font-size: 9px;
+                    width: 47px;
+
+                    span {
+                        display: block;
+                        line-height: 1;
+                        font-size: 19px;
+                        font-weight: 700;
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .time-count.sec,
+                .viewed-item-bottom .progress-bar {
+                    background: #f7ba01;
+                }
+
+            }
+        }
+
+        .stock-detail-product {
+            padding: 20px 0;
+
+            p {
+                span {
+                    color: rgb(255, 96, 0);
+                }
+            }
+        }
+
+        .input-count {
+            i {
+                color: rgb(119, 118, 124);
+            }
+
+            input {
+                width: 40px;
+                outline: none;
+                border: none;
+                text-align: center;
+                color: #a1a1a1;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+            }
+
+            button {
+                border: none;
+                width: 200px;
+                color: #ffffff;
+                padding: 10px 27px;
+                background-color: rgb(255, 96, 0);
+            }
+        }
+
+        .compare-wishlist {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+
+            span {
+                margin-right: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(255, 96, 0);
+                }
+            }
+
+            svg {
+                margin-right: 10px;
+
+            }
+
+        }
+
+        .size-guide {
+            svg {
+                max-width: 16px;
+                max-height: 16px;
+                margin-right: 5px;
+
+            }
+
+            a {
+                font-size: 14px;
+                color: black;
+
+                &:hover {
+                    color: rgb(255, 96, 0);
+                }
+            }
+
+        }
+
+        .venam-estimated-delivery {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 0;
+            svg{
+                max-width: 18px;
+                max-height: 18px;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+        }
+        .venam-product-view{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: rgb(119, 118, 124);
+            padding-bottom: 10px;
+            svg{
+                max-width: 14px;
+                max-height: 14px;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+            span{
+                color: black;
+            }
+        }
+        .product_meta{
+            .sku{
+                display: inline;
+            }
+            span{
+                display: block;
+                padding: 10px 0;
+                a{
+                    color: rgb(119, 118, 124);
+                    font-size: 13px;
+                    &:hover{
+                        color:  rgb(255, 96, 0);
+                    }
+                }
+            }
+            
+        }
+        .venam-product-share{
+            margin-bottom: 20px;
+            .venam-social-icons{
+                display: inline;
+                a{
+                    padding: 8px;
+                    border-radius: 100%;
+                    margin: 0 2px;
+                   i{
+                    color: #fff;
+                   }
+                }
+            }
+        }
+        
+    }
+}
