@@ -1007,25 +1007,40 @@
   background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
   background-position: center;
   background-size: cover;
+  padding: 50px 0;
+}
+.smart-watch .all {
+  display: flex;
+  justify-content: space-between;
+}
+.smart-watch .all a {
+  margin-bottom: 25px;
 }
 .smart-watch .all h2 {
   color: #ffffff;
 }
 .smart-watch .all img {
-  background-color: #ff6000;
+  background-color: transparent;
 }
 .smart-watch .all #offer {
   color: #ff6000;
 }
 .smart-watch .all #upto {
   color: #ff6000;
+  position: absolute;
+  right: 440px;
+  transform: rotate(-90deg);
+  font-size: 15px;
 }
 .smart-watch .all #off {
   color: #ffffff;
 }
 .smart-watch .all #amount {
+  margin-left: 10px;
+  margin-right: 10px;
   color: #ffffff;
   background-color: #ff6000;
+  padding: 10px 20px;
 }
 .smart-watch .all a {
   padding: 10px 0;
@@ -1034,6 +1049,98 @@
   color: #ff6000;
   background-color: #ffffff;
   text-align: center;
+}
+
+#subscribe-now {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.7843137255);
+}
+#subscribe-now button {
+  border-radius: 4px;
+  color: #ffffff;
+  border: transparent;
+  padding: 0 38px;
+  background-color: #ff6000;
+  transition: 0.8s all;
+}
+#subscribe-now button:hover {
+  background-color: black;
+}
+#subscribe-now button,
+#subscribe-now input {
+  height: 40px;
+}
+#subscribe-now input {
+  outline: none;
+  background: #fff !important;
+  border-radius: 4px;
+  border: none;
+  padding: 17px 30px;
+  font-size: 12px;
+  padding-right: 200px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+#find-out-more {
+  background-color: rgb(242, 242, 242);
+  padding: 80px 0;
+}
+#find-out-more ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#find-out-more ul a {
+  color: #8c8c8c;
+  border-right: 1px solid #8c8c8c;
+  padding: 0 5px;
+  transition: 0.5s all;
+}
+#find-out-more ul a:hover {
+  color: blue;
+}
+
+#venam-footer {
+  background-color: rgb(242, 242, 242);
+  padding-bottom: 80px;
+}
+#venam-footer .icon i {
+  margin-right: 20px;
+}
+#venam-footer p {
+  margin: 40px 0;
+  color: #8c8c8c;
+}
+#venam-footer ul li {
+  font-size: 14px;
+  margin: 10px 0;
+}
+#venam-footer ul li:first-child {
+  color: black;
+  font-size: 18px;
+}
+#venam-footer ul li a {
+  color: #8c8c8c;
+  transition: 0.5s all;
+}
+#venam-footer ul li a:hover {
+  color: blue;
+}
+#venam-footer ul li a i {
+  margin-right: 5px;
+}
+
+#pay-pal {
+  padding: 15px 0;
+  background-color: #303030 !important;
+}
+#pay-pal p {
+  color: #8c8c8c;
+  margin: 0;
 }
 
 #detail-shop .detail-shop {
