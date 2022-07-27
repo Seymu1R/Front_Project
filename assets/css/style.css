@@ -839,6 +839,170 @@
   font-size: 14px;
   color: #ff6000;
 }
+
+#most-papular {
+  background-color: rgb(242, 242, 242);
+}
+#most-papular .slick-prev {
+  width: 6px;
+  display: inline;
+  top: 150px;
+  left: -20px;
+  z-index: 1111;
+}
+#most-papular .slick-prev::before {
+  color: black;
+}
+#most-papular .slick-next {
+  width: 6px;
+  display: inline;
+  top: 150px;
+  right: 1px;
+  z-index: 1111;
+}
+#most-papular .slick-next::before {
+  color: black;
+}
+#most-papular .top-first {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#most-papular .buttom img {
+  width: 100%;
+}
+#most-papular .buttom .product-items-papular {
+  position: relative;
+  text-align: center;
+}
+#most-papular .buttom .product-items-papular:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#most-papular .buttom .product-items-papular p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ff6000;
+}
+#most-papular .buttom .product-items-papular p span {
+  color: #909090;
+}
+#most-papular .buttom .product-items-papular img {
+  width: 100%;
+}
+#most-papular .buttom .product-items-papular .hover-detail {
+  position: absolute;
+  bottom: 180px;
+  left: 4px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#most-papular .buttom .product-items-papular .hover-detail .top {
+  background-color: #ffffff;
+}
+#most-papular .buttom .product-items-papular .hover-detail .top svg {
+  margin: 0 15px 10px;
+}
+#most-papular .buttom .product-items-papular .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+#most-papular .buttom .product-items-papular .hurry-up .coming-time {
+  width: 100%;
+}
+#most-papular .buttom .product-items-papular .hurry-up .coming-time .time-count {
+  padding-left: 20px;
+  display: inline-block;
+  background: #252525;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 6px;
+  width: 52px;
+  line-height: 1;
+  margin: 0 3px 0;
+  padding: 9px 10px;
+  font-size: 9px;
+  width: 47px;
+}
+#most-papular .buttom .product-items-papular .hurry-up .coming-time .time-count span {
+  display: block;
+  font-size: 20px;
+}
+#most-papular .buttom .product-items-papular .hurry-up .coming-time .sec {
+  background-color: #f7ba01;
+}
+#most-papular .buttom .product-items-papular .hurry-up p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #909090;
+}
+#most-papular .buttom .product-items-papular .hurry-up p span {
+  color: #f7ba01;
+}
+#most-papular .buttom .product-items-papular .hurry-up ul {
+  display: flex;
+  justify-content: space-between;
+}
+#most-papular .buttom .product-items-papular .hurry-up ul li {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  line-height: 1;
+  color: #909090;
+}
+
+#last-news-uptade {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#last-news-uptade .last-news-top {
+  margin-bottom: 50px;
+}
+#last-news-uptade .last-news-top p {
+  font-size: 12px;
+  color: #ff6000;
+}
+#last-news-uptade .last-news-buttom {
+  text-align: center;
+}
+#last-news-uptade .last-news-buttom img {
+  width: 100%;
+}
+#last-news-uptade .last-news-buttom i {
+  color: #ff6000;
+  font-size: 12px;
+  margin-right: 10px;
+}
+#last-news-uptade .last-news-buttom a {
+  color: #7d7d7d;
+  margin-right: 40px;
+  font-size: 14px;
+}
+#last-news-uptade .last-news-buttom p {
+  color: #7d7d7d;
+  margin: 20px 0;
+}
+#last-news-uptade .last-news-buttom #read-more {
+  color: #252525;
+  text-decoration: underline;
+}
+
 .smart-watch {
   background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
   background-position: center;
@@ -1227,6 +1391,33 @@
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+#shop-top-div {
+  padding: 100px 0;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+#shop-top-div h2 {
+  margin-bottom: 20px;
+}
+#shop-top-div ul {
+  padding: 10px 40px;
+  display: inline;
+  border-radius: 20px;
+  background-color: white;
+}
+#shop-top-div ul li {
+  cursor: pointer;
+  margin-right: 10px;
+  display: inline;
+  transition: 0.5s all;
+}
+#shop-top-div ul li:hover {
+  color: rgb(255, 99, 0);
+}
+#shop-top-div ul li:last-child {
+  color: rgb(255, 99, 0);
 }
 
 fieldset, label {

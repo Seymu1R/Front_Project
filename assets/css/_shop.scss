@@ -1,0 +1,28 @@
+#shop-top-div{
+    padding: 100px 0;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    h2{
+        margin-bottom: 20px;
+    }
+    ul{
+        padding: 10px 40px;
+        display: inline;
+        border-radius: 20px;
+        
+        
+        background-color: white;
+        li{
+            cursor: pointer;
+            margin-right: 10px;
+            display: inline;
+            transition: .5s all;
+            &:hover{
+                color: rgb(255, 99, 0);
+            }
+            &:last-child{
+                color: rgb(255, 99, 0);
+            }
+        }
+    }
+}
