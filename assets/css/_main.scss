@@ -458,6 +458,7 @@
 }
 
 #best-selling-products {
+    
 
     .top {
         padding-bottom: 60px;
@@ -466,6 +467,82 @@
         p {
             font-size: 14px;
             color: #ff6000;
+        }
+    }
+    .buttom{
+        .button-group{
+            text-align: center;
+            background-color: #f2f2f2;
+            border-radius: 20px         ;
+            padding: 10px ;
+            
+            button{
+                border: none;
+                padding-left: 40px;
+                &:focus{
+                    color: #ff6000;
+                }
+            }
+        }
+        
+        .items-details-isotope{
+            .product-items {
+                position: relative;
+                text-align: center;
+        
+                &:hover {
+                    & .hover-detail {
+                        opacity: 1;
+                        visibility: visible;
+                        height: 80px;
+                    }
+                }
+        
+                p {
+                    color: #ff6000;
+        
+                    span {
+                        margin-right: 10px;
+                        color: #858585;
+                    }
+                }
+        
+                img {
+                    width: 100%;
+                }
+        
+                .hover-detail {
+                    position: absolute;
+                    bottom: 70px;
+                    left: 50px;
+                    width: 160px;
+                    opacity: 0;
+                    visibility: hidden;
+                    height: 0;
+                    transition: .5s all;
+                    overflow: hidden;
+        
+                    .top-hover{
+                        background-color: #ffffff;
+        
+                        svg {
+                            margin: 0 15px 10px;
+                        }
+                    }
+        
+                    button {
+                        width: 100%;
+                        background-color: #3a3a3a;
+                        border: none;        
+                        color: #ffffff;
+                        padding: 10px 0;
+                    }
+                }
+            }
+            
+            img{
+                width: 100%;
+            }
         }
     }
 

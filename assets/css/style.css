@@ -839,6 +839,65 @@
   font-size: 14px;
   color: #ff6000;
 }
+#best-selling-products .buttom .button-group {
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+}
+#best-selling-products .buttom .button-group button {
+  border: none;
+  padding-left: 40px;
+}
+#best-selling-products .buttom .button-group button:focus {
+  color: #ff6000;
+}
+#best-selling-products .buttom .items-details-isotope .product-items {
+  position: relative;
+  text-align: center;
+}
+#best-selling-products .buttom .items-details-isotope .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#best-selling-products .buttom .items-details-isotope .product-items p {
+  color: #ff6000;
+}
+#best-selling-products .buttom .items-details-isotope .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#best-selling-products .buttom .items-details-isotope .product-items img {
+  width: 100%;
+}
+#best-selling-products .buttom .items-details-isotope .product-items .hover-detail {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#best-selling-products .buttom .items-details-isotope .product-items .hover-detail .top-hover {
+  background-color: #ffffff;
+}
+#best-selling-products .buttom .items-details-isotope .product-items .hover-detail .top-hover svg {
+  margin: 0 15px 10px;
+}
+#best-selling-products .buttom .items-details-isotope .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+#best-selling-products .buttom .items-details-isotope img {
+  width: 100%;
+}
 
 #most-papular {
   background-color: rgb(242, 242, 242);
