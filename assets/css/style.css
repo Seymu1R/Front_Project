@@ -630,6 +630,215 @@
   padding: 10px 0;
 }
 
+#flip-effect {
+  padding: 150px 0;
+}
+#flip-effect .all div {
+  text-align: center;
+}
+#flip-effect .all div .hover-rotate img {
+  margin-bottom: 30px;
+  transform: rotateY(0deg);
+  transition: 1s transform;
+}
+#flip-effect .all div .hover-rotate:hover h6 {
+  color: #1863d4;
+}
+#flip-effect .all div .hover-rotate:hover img {
+  transform: rotateY(360deg);
+}
+#flip-effect .all div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #958585;
+}
+#flip-effect .all div h6 {
+  transition: 0.5s all;
+}
+
+#deals-of-day .container {
+  padding: 0 40px !important;
+  max-width: 1500px;
+}
+#deals-of-day .top-left,
+#deals-of-day .buttom-side {
+  background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/sblog_thumb04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#deals-of-day .top-left .overlay,
+#deals-of-day .buttom-side .overlay {
+  background-color: rgba(37, 37, 37, 0.4274509804);
+  padding: 50px 0;
+}
+#deals-of-day .top-left h6,
+#deals-of-day .top-left h3,
+#deals-of-day .top-left p,
+#deals-of-day .top-left a,
+#deals-of-day .buttom-side h6,
+#deals-of-day .buttom-side h3,
+#deals-of-day .buttom-side p,
+#deals-of-day .buttom-side a {
+  margin-left: 30px;
+  color: white;
+  padding: 10px 0;
+}
+#deals-of-day .top-left a,
+#deals-of-day .buttom-side a {
+  background-color: #ff6000;
+  padding: 8px 15px;
+}
+#deals-of-day .buttom-side {
+  background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/banner2.jpg);
+}
+#deals-of-day .top-right p {
+  color: #ff6000;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#deals-of-day .top-right a {
+  color: #ff6000;
+}
+#deals-of-day .mid-right .product-items {
+  position: relative;
+  text-align: center;
+}
+#deals-of-day .mid-right .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#deals-of-day .mid-right .product-items p {
+  color: #ff6000;
+}
+#deals-of-day .mid-right .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#deals-of-day .mid-right .product-items img {
+  width: 100%;
+}
+#deals-of-day .mid-right .product-items .hover-detail {
+  position: absolute;
+  bottom: 80px;
+  left: 4px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#deals-of-day .mid-right .product-items .hover-detail .top {
+  background-color: #ffffff;
+}
+#deals-of-day .mid-right .product-items .hover-detail .top svg {
+  margin: 0 15px 10px;
+}
+#deals-of-day .mid-right .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+#deals-of-day .buttom-right {
+  text-align: center;
+}
+#deals-of-day .buttom-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+#deals-of-day .buttom-right ul li {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  line-height: 1;
+  color: #909090;
+}
+#deals-of-day .buttom-right p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #909090;
+}
+#deals-of-day .buttom-right p span {
+  color: #f7ba01;
+}
+#deals-of-day .buttom-right .coming-time {
+  width: 100%;
+}
+#deals-of-day .buttom-right .coming-time .time-count {
+  padding-left: 20px;
+  display: inline-block;
+  background: #252525;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 6px;
+  width: 52px;
+  line-height: 1;
+  margin: 0 3px 0;
+  padding: 9px 10px;
+  font-size: 9px;
+  width: 47px;
+}
+#deals-of-day .buttom-right .coming-time .time-count span {
+  display: block;
+  font-size: 20px;
+}
+#deals-of-day .buttom-right .coming-time .sec {
+  background-color: #f7ba01;
+}
+
+#futured-products {
+  padding: 100px 0;
+}
+#futured-products #hover-div {
+  margin-bottom: 20px;
+  transition: 1s all;
+  border: 2px solid transparent;
+}
+#futured-products #hover-div:hover {
+  border: 2px solid black;
+}
+#futured-products .top {
+  padding: 50px 0;
+}
+#futured-products .top a {
+  font-size: 13px;
+  color: #ff6000;
+}
+#futured-products .buttom img {
+  width: 100%;
+}
+#futured-products .buttom p {
+  font-size: 15px;
+  color: #ff6000;
+  font-family: thin;
+  margin-bottom: 0;
+}
+#futured-products .buttom i {
+  color: #f7ba01;
+  font-size: 10px;
+}
+
+#best-selling-products .top {
+  padding-bottom: 60px;
+  text-align: center;
+}
+#best-selling-products .top p {
+  font-size: 14px;
+  color: #ff6000;
+}
 .smart-watch {
   background-image: url("https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg");
   background-position: center;
@@ -888,6 +1097,66 @@
   padding: 0 20px;
 }
 
+#slider-liked .slick-prev {
+  top: -40px;
+  left: 1150px !important;
+}
+#slider-liked .slick-prev::before {
+  color: black;
+}
+#slider-liked .slick-next {
+  top: -40px;
+}
+#slider-liked .slick-next::before {
+  color: black;
+}
+#slider-liked .product-items {
+  position: relative;
+  text-align: center;
+}
+#slider-liked .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#slider-liked .product-items p {
+  color: #ff6000;
+}
+#slider-liked .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#slider-liked .product-items img {
+  width: 100%;
+}
+#slider-liked .product-items .hover-detail {
+  position: absolute;
+  bottom: 65px;
+  left: 30px;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#slider-liked .product-items .hover-detail .top {
+  background-color: #ffffff;
+}
+#slider-liked .product-items .hover-detail .top svg {
+  margin: 0 15px 10px;
+}
+#slider-liked .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+#product-reviews {
+  padding: 50px 0;
+}
 #product-reviews img {
   border-radius: 50%;
   overflow: hidden;
@@ -895,18 +1164,69 @@
 #product-reviews .top-review {
   padding: 50px 0;
 }
+#product-reviews #comment {
+  color: #6e7673;
+}
 #product-reviews p #first-star {
   margin-left: 150px;
 }
 #product-reviews p i {
   color: #ff6000;
 }
+#product-reviews .right-side label {
+  font-size: 14px;
+}
+#product-reviews .right-side label span {
+  color: #ff6000;
+}
 #product-reviews .right-side select {
-  width: 100%;
+  width: 100% !important;
   border: 1px solid #a1a1a1;
 }
 #product-reviews .right-side select option ul {
   width: 100% !important;
+}
+#product-reviews .right-side textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--theme-gray);
+  padding: 13px 20px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 160px;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #7d7d7d;
+  line-height: 1.5;
+}
+#product-reviews .right-side #input-submit {
+  -webkit-appearance: none;
+  width: 150px;
+  padding: 17px 25px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background-image: none;
+  background-color: #ff6000;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transition: all 0.3s ease 0s;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 fieldset, label {
