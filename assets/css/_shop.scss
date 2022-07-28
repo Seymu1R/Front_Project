@@ -111,7 +111,8 @@
             }
         }
     }
-    .product-sizes{
+
+    .product-sizes {
         h6 {
             font-size: 22px;
         }
@@ -136,30 +137,37 @@
             }
         }
     }
-    .avverage-raiting{
-        h6{
+
+    .avverage-raiting {
+        h6 {
             font-size: 22px;
         }
-        .raiting-stars{
+
+        .raiting-stars {
             padding: 5px 0;
-            a{
+
+            a {
                 font-size: 12px;
                 color: black;
-                i{
+
+                i {
                     color: #ff6000;
                 }
             }
         }
     }
-    .input-search{
-        margin: 20px 0;       
-        input{
+
+    .input-search {
+        margin: 20px 0;
+
+        input {
             padding: 15px 0;
             outline: none;
             border: none;
             width: 150px;
         }
-        button{
+
+        button {
             border-radius: 0 5px 5px 0;
             width: 100px;
             padding: 15px 0;
@@ -167,48 +175,59 @@
             background-color: #fff;
             border: none;
             transition: .3s all;
-            &:hover{
+
+            &:hover {
                 background-color: #ff6000;
                 color: #ffffff;
             }
         }
     }
-    .product-tags{
+
+    .product-tags {
         padding: 40px 0;
-        h6{
+
+        h6 {
             font-size: 22px;
             margin-right: 100px;
-        }   
+        }
+
         display: flex;
         flex-wrap: wrap;
-        a{
-           padding: 5px 10px;
-           color:#7D7D7D;
-           margin-bottom: 20px;
-           transition: .5s all;
-           &:hover{
-            background-color: #ff6000;
-            color: #ffffff;
-            border-radius: 5px;
-           }
+
+        a {
+            padding: 5px 10px;
+            color: #7D7D7D;
+            margin-bottom: 20px;
+            transition: .5s all;
+
+            &:hover {
+                background-color: #ff6000;
+                color: #ffffff;
+                border-radius: 5px;
+            }
         }
     }
-    .on-sale-products, .on-sale-products-2{
-        h5{
+
+    .on-sale-products,
+    .on-sale-products-2 {
+        h5 {
             font-size: 22px;
             margin-top: 20px;
         }
-        img{
+
+        img {
             width: 100%;
         }
-        #discount{
+
+        #discount {
             color: #7d7d7d;
             text-decoration: line-through;
         }
-        span{
-            color:#ff6000;
-           
-            
+
+        span {
+            color: #ff6000;
+
+
         }
     }
 
@@ -261,7 +280,7 @@
     }
 
     .shop-isotope {
-        
+
         .top-shop-isotope {
             #ul-left {
                 justify-content: space-between;
@@ -279,14 +298,14 @@
         }
 
         .sorting-widths {
-            .items-details-isotope{
+            .items-details-isotope {
                 display: flex;
                 flex-wrap: wrap;
-                
+
                 .product-items {
                     position: relative;
                     text-align: center;
-            
+
                     &:hover {
                         & .hover-detail {
                             opacity: 1;
@@ -294,20 +313,20 @@
                             height: 80px;
                         }
                     }
-            
+
                     p {
                         color: #ff6000;
-            
+
                         span {
                             margin-right: 10px;
                             color: #858585;
                         }
                     }
-            
+
                     img {
                         width: 100%;
                     }
-            
+
                     .hover-detail {
                         position: absolute;
                         bottom: 70px;
@@ -318,29 +337,30 @@
                         height: 0;
                         transition: .5s all;
                         overflow: hidden;
-            
-                        .top-hover{
+
+                        .top-hover {
                             background-color: #ffffff;
-            
+
                             svg {
                                 margin: 0 15px 10px;
                             }
                         }
-            
+
                         button {
                             width: 100%;
                             background-color: #3a3a3a;
-                            border: none;        
+                            border: none;
                             color: #ffffff;
                             padding: 10px 0;
                         }
                     }
                 }
-                
-                img{
+
+                img {
                     width: 100%;
                 }
             }
+
             .svgs {
                 a {
                     padding: 5px 10px;

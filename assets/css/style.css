@@ -1718,18 +1718,22 @@
   color: #ffffff;
   border-radius: 5px;
 }
-#shop-modern-tecnology .on-sale-products h5, #shop-modern-tecnology .on-sale-products-2 h5 {
+#shop-modern-tecnology .on-sale-products h5,
+#shop-modern-tecnology .on-sale-products-2 h5 {
   font-size: 22px;
   margin-top: 20px;
 }
-#shop-modern-tecnology .on-sale-products img, #shop-modern-tecnology .on-sale-products-2 img {
+#shop-modern-tecnology .on-sale-products img,
+#shop-modern-tecnology .on-sale-products-2 img {
   width: 100%;
 }
-#shop-modern-tecnology .on-sale-products #discount, #shop-modern-tecnology .on-sale-products-2 #discount {
+#shop-modern-tecnology .on-sale-products #discount,
+#shop-modern-tecnology .on-sale-products-2 #discount {
   color: #7d7d7d;
   text-decoration: line-through;
 }
-#shop-modern-tecnology .on-sale-products span, #shop-modern-tecnology .on-sale-products-2 span {
+#shop-modern-tecnology .on-sale-products span,
+#shop-modern-tecnology .on-sale-products-2 span {
   color: #ff6000;
 }
 #shop-modern-tecnology .right-modern button {
@@ -1841,6 +1845,93 @@
 }
 #shop-modern-tecnology .shop-isotope .sorting-widths .svgs svg {
   fill: #7d7d7d;
+}
+
+#login-my-accaunt {
+  padding: 100px 0;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+#login-my-accaunt h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#login-my-accaunt ul {
+  padding: 10px 40px;
+  display: inline;
+  border-radius: 20px;
+  background-color: white;
+}
+#login-my-accaunt ul li {
+  cursor: pointer;
+  margin-right: 10px;
+  display: inline;
+  transition: 0.5s all;
+}
+#login-my-accaunt ul li:hover {
+  color: rgb(255, 99, 0);
+}
+#login-my-accaunt ul li:last-child {
+  color: rgb(255, 99, 0);
+}
+
+#login-register {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#login-register h2 {
+  margin-bottom: 20px;
+}
+#login-register input {
+  height: 40px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+#login-register #check {
+  position: absolute;
+  width: auto;
+  display: inline;
+  margin-bottom: 0;
+  top: 240px;
+}
+#login-register a {
+  display: block;
+  margin-top: 20px;
+}
+#login-register #privacy {
+  display: inline;
+}
+#login-register button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  background-color: #ff6300;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+#login-register button:hover {
+  background-color: #2b2b2b;
+}
+#login-register label {
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-weight: 500;
+}
+#login-register span {
+  font-size: 12px;
+  margin-left: 20px;
+}
+#login-register p {
+  font-size: 15px;
+  color: #7d7d7d;
+  line-height: 50px;
 }
 
 fieldset, label {
