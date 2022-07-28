@@ -1586,6 +1586,263 @@
   color: rgb(255, 99, 0);
 }
 
+#shop-modern-tecnology .product-categories h6 {
+  font-size: 22px;
+}
+#shop-modern-tecnology .product-categories ul {
+  padding: 0;
+}
+#shop-modern-tecnology .product-categories ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#shop-modern-tecnology .product-categories ul li a {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+#shop-modern-tecnology .product-categories ul li input {
+  margin-right: 5px;
+}
+#shop-modern-tecnology .product-status {
+  padding: 40px 0;
+}
+#shop-modern-tecnology .product-status h6 {
+  font-size: 22px;
+}
+#shop-modern-tecnology .product-status ul {
+  padding: 0;
+}
+#shop-modern-tecnology .product-status ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#shop-modern-tecnology .product-status ul li a {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+#shop-modern-tecnology .product-status ul li input {
+  margin-right: 5px;
+}
+#shop-modern-tecnology .product-colors h6 {
+  font-size: 22px;
+}
+#shop-modern-tecnology .product-colors ul {
+  padding: 0;
+}
+#shop-modern-tecnology .product-colors ul li {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#shop-modern-tecnology .product-colors ul li span {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+#shop-modern-tecnology .product-colors ul li a {
+  color: black;
+  font-size: 14px;
+}
+#shop-modern-tecnology .product-sizes h6 {
+  font-size: 22px;
+}
+#shop-modern-tecnology .product-sizes ul {
+  padding: 0;
+}
+#shop-modern-tecnology .product-sizes ul li {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#shop-modern-tecnology .product-sizes ul li span {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+#shop-modern-tecnology .product-sizes ul li a {
+  color: black;
+  font-size: 14px;
+}
+#shop-modern-tecnology .avverage-raiting h6 {
+  font-size: 22px;
+}
+#shop-modern-tecnology .avverage-raiting .raiting-stars {
+  padding: 5px 0;
+}
+#shop-modern-tecnology .avverage-raiting .raiting-stars a {
+  font-size: 12px;
+  color: black;
+}
+#shop-modern-tecnology .avverage-raiting .raiting-stars a i {
+  color: #ff6000;
+}
+#shop-modern-tecnology .input-search {
+  margin: 20px 0;
+}
+#shop-modern-tecnology .input-search input {
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  width: 150px;
+}
+#shop-modern-tecnology .input-search button {
+  border-radius: 0 5px 5px 0;
+  width: 100px;
+  padding: 15px 0;
+  color: black;
+  background-color: #fff;
+  border: none;
+  transition: 0.3s all;
+}
+#shop-modern-tecnology .input-search button:hover {
+  background-color: #ff6000;
+  color: #ffffff;
+}
+#shop-modern-tecnology .product-tags {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#shop-modern-tecnology .product-tags h6 {
+  font-size: 22px;
+  margin-right: 100px;
+}
+#shop-modern-tecnology .product-tags a {
+  padding: 5px 10px;
+  color: #7D7D7D;
+  margin-bottom: 20px;
+  transition: 0.5s all;
+}
+#shop-modern-tecnology .product-tags a:hover {
+  background-color: #ff6000;
+  color: #ffffff;
+  border-radius: 5px;
+}
+#shop-modern-tecnology .on-sale-products h5, #shop-modern-tecnology .on-sale-products-2 h5 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+#shop-modern-tecnology .on-sale-products img, #shop-modern-tecnology .on-sale-products-2 img {
+  width: 100%;
+}
+#shop-modern-tecnology .on-sale-products #discount, #shop-modern-tecnology .on-sale-products-2 #discount {
+  color: #7d7d7d;
+  text-decoration: line-through;
+}
+#shop-modern-tecnology .on-sale-products span, #shop-modern-tecnology .on-sale-products-2 span {
+  color: #ff6000;
+}
+#shop-modern-tecnology .right-modern button {
+  background: #0465d2;
+  padding: 10px 27px;
+  color: #ffffff;
+  border: none;
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+#shop-modern-tecnology .right-modern button:hover {
+  background-color: black;
+}
+#shop-modern-tecnology .right-modern p {
+  font-size: 15px;
+  color: #7D7D7D;
+  padding: 15px 0;
+}
+#shop-modern-tecnology .all-categories-slider {
+  padding: 40px 0;
+}
+#shop-modern-tecnology .all-categories-slider .slider img {
+  width: 100%;
+}
+#shop-modern-tecnology .all-categories-slider .slider h4 {
+  font-size: 14px;
+}
+#shop-modern-tecnology .all-categories-slider .slider .stock {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 20px;
+  position: absolute;
+  background-color: #ff6000;
+}
+#shop-modern-tecnology .all-categories-slider .slider .stock span {
+  color: white;
+}
+#shop-modern-tecnology .shop-isotope .top-shop-isotope #ul-left {
+  justify-content: space-between;
+  display: flex;
+}
+#shop-modern-tecnology .shop-isotope .top-shop-isotope #ul-left li {
+  margin-right: 10px;
+}
+#shop-modern-tecnology .shop-isotope .top-shop-isotope ul {
+  display: inline;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope {
+  display: flex;
+  flex-wrap: wrap;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items {
+  position: relative;
+  text-align: center;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items p {
+  color: #ff6000;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items img {
+  width: 100%;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items .hover-detail {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items .hover-detail .top-hover {
+  background-color: #ffffff;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items .hover-detail .top-hover svg {
+  margin: 0 15px 10px;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .items-details-isotope img {
+  width: 100%;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .svgs a {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: 0.5s all;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .svgs a:hover {
+  border: 1px solid black;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .svgs a:focus {
+  border: 1px solid black;
+}
+#shop-modern-tecnology .shop-isotope .sorting-widths .svgs svg {
+  fill: #7d7d7d;
+}
+
 fieldset, label {
   margin: 0;
   padding: 0;
