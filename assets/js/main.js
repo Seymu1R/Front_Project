@@ -13,10 +13,10 @@ getSellwithus.addEventListener("click", (e) => {
   document.querySelector(".sell-with-us").classList.toggle("d-block");
 });
 
-$(document).ready(function(){
-    $(".button-all-categories").click(function(e){
-      e.preventDefault();        
-        $(".all-catogories-catalog").slideToggle();
-      });  
+$(document).ready(function () {
+  $(".button-all-categories").click(function (e) {
+    e.preventDefault();
+    $(".all-catogories-catalog").slideToggle();
+  });
 
 });
