@@ -91,17 +91,19 @@
                         </button>
                     </div>
                     <div class="col-xl-2 col-lg-2  col-md-4 svgs">
-                        <div class="svg-user">
-                            <a href="login.html"><svg class="svgUser1" width="20" height="20" viewBox="0 0 32 32"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="m16 16a7 7 0 1 0 -7-7 7 7 0 0 0 7 7zm0-12a5 5 0 1 1 -5 5 5 5 0 0 1 5-5z">
-                                </path>
-                                <path
-                                    d="m20 18h-8a9 9 0 0 0 -9 9 3 3 0 0 0 3 3h20a3 3 0 0 0 3-3 9 9 0 0 0 -9-9zm6 10h-20a1 1 0 0 1 -1-1 7 7 0 0 1 7-7h8a7 7 0 0 1 7 7 1 1 0 0 1 -1 1z">
-                                </path>
-                            </svg></a>
-                            
-                        </div>
+                        <a href="login.html">
+                            <div class="svg-user">
+                                <svg class="svgUser1" width="20" height="20" viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m16 16a7 7 0 1 0 -7-7 7 7 0 0 0 7 7zm0-12a5 5 0 1 1 -5 5 5 5 0 0 1 5-5z">
+                                    </path>
+                                    <path
+                                        d="m20 18h-8a9 9 0 0 0 -9 9 3 3 0 0 0 3 3h20a3 3 0 0 0 3-3 9 9 0 0 0 -9-9zm6 10h-20a1 1 0 0 1 -1-1 7 7 0 0 1 7-7h8a7 7 0 0 1 7 7 1 1 0 0 1 -1 1z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+
                         <div class="svgCompare">
                             <svg class="svgCompare" width="20" height="20" viewBox="0 0 30 30"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -505,45 +507,61 @@
     </header>
     <main>
         <section id="login-my-accaunt">
-            <h2>My Account</h2>
+            <h2>CONTACT US</h2>
             <ul>
                 <li>Home</li>
-                <li>My account</li>
+                <li>Contact</li>
             </ul>
         </section>
-        <section id="login-register">
+        <section id="contact-info">
             <div class="container">
-                <div class="row g-5 justify-content-evenly">
-                    <div style="border: 1px solid #7d7d7d5e ;" class="col-xl-5 col-12 position-relative ">
-                        <h2>Login</h2>
-                        <label for="user-name">USERNAME OR EMAIL ADDRESS *</label>
-                        <input id="user-name" type="text">
-                        <label  for="password">PASSWORD *</label>
-                        <div class="pasword  position-relative ">
-                            <input id="password" type="password"><i id="password-visible" class=" position-absolute fa-solid fa-eye"></i>
-                        </div>
-                       
-                        <button>LOG IN</button>
-                        <input id="check" type="checkbox">
-                        <span>REMEMBER ME</span>
-                        <a href="">lost your password?</a>
+                <div class="row justify-content-between all ">
+                    <div class="col-xl-3 text-center  ">
+                        <img src="assets/images/contact-us-img-1.png" alt="">
+                        <h5>Our Location</h5>
+                        <p>W898 RTower Stat, Suite 56 Brockland,CA 9622 United States</p>
                     </div>
-                    <div style="border: 1px solid #7d7d7d5e ;" class="col-xl-5 col-12 ">
-                        <h2>Register</h2>
-                        <label for="user-name">EMAIL ADDRESS *</label>
-                        <input type="e-mail">
-
-                        <p>A password will be sent to your email address.
-
-                            Your personal data will be used to support your experience throughout this website, to
-                            manage access to your account, and for other purposes described in our <a id="privacy" href="">privacy policy</a>.</p>
-                        <button>REGISTER</button>
-                        
-                        
+                    <div class="col-xl-3 text-center ">
+                        <img src="assets/images/contact-us-img-2.png" alt="">
+                        <h5>Our Location</h5>
+                        <p>W898 RTower Stat, Suite 56 Brockland,CA 9622 United States</p>
+                    </div>
+                    <div class="col-xl-3 text-center ">
+                        <img src="assets/images/contact-us-img-3.png" alt="">
+                        <h5>Our Location</h5>
+                        <p>W898 RTower Stat, Suite 56 Brockland,CA 9622 United States</p>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="send-us-message">
+            <div class="top-mesage text-center">
+                <span>LET'S TALK</span>
+                <h2>SEND US A MESSAGE</h2>
+            </div>
 
+            <div class="buttom-message">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 ">
+                            <div class="first-name d-inline position-relative "><input placeholder="First Name*" type="text"><i class="fa-solid fa-user position-absolute"></i></div>
+                            <div class="last-name d-inline position-relative "><input placeholder="Last Name*" type="text"><i class=" position-absolute fa-solid fa-user position-absolute"></i> </div>
+                            <div class="e-mail d-inline position-relative "><input placeholder="Your Email*" type="e-mail"><i class=" position-absolute fa-solid fa-envelope"></i></div>
+                            <div class=" d-inline position-relative phone"><input placeholder="Phone*" type="tel"><i class=" position-absolute fa-solid fa-mobile-screen"></i></div>
+                            <textarea placeholder="Enter Your Message" name="" id="" cols="64" rows="8"></textarea>
+                            <button>Submit</button>
+
+                        </div>
+                        <div class="col-xl-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49341.161284772585!2d49.210810054617845!3d39.382892451503636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4024affcd2bdef57%3A0xad29be7dd0adeff1!2zTmVmdMOnYWxhIFBhcmvEsSwgSGV5ZMmZciDGj2xpeWV2LCBOZWZ0w6dhbGEgNDcwMCwgQXplcmJhaWphbg!5e0!3m2!1sen!2s!4v1659024362744!5m2!1sen!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
 

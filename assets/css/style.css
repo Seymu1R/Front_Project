@@ -1882,12 +1882,17 @@
 #login-register h2 {
   margin-bottom: 20px;
 }
+#login-register .pasword i {
+  font-size: 10px;
+  right: 7px;
+  bottom: 12px;
+}
 #login-register input {
+  border: 1px solid rgba(125, 125, 125, 0.368627451);
   height: 40px;
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  border: none;
   outline: none;
 }
 #login-register #check {
@@ -1932,6 +1937,74 @@
   font-size: 15px;
   color: #7d7d7d;
   line-height: 50px;
+}
+
+#contact-info {
+  padding: 100px 0;
+}
+#contact-info img {
+  width: 80px;
+}
+#contact-info P {
+  font-size: 15px;
+  color: #7D7d7d;
+}
+#contact-info h5 {
+  margin: 15px 0;
+}
+#contact-info .all div {
+  padding: 40px 0;
+  border: 1px solid rgba(125, 125, 125, 0.3882352941);
+  width: 380px;
+}
+
+#send-us-message {
+  padding-bottom: 100px;
+}
+#send-us-message .top-mesage {
+  padding-bottom: 70px;
+}
+#send-us-message .top-mesage span {
+  display: block;
+  line-height: 1;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ff6000;
+  margin-bottom: 15px;
+}
+#send-us-message .buttom-message .first-name i, #send-us-message .buttom-message .last-name i, #send-us-message .buttom-message .e-mail i, #send-us-message .buttom-message .phone i {
+  right: 30px;
+  top: 7px;
+  color: #7D7d7d;
+}
+#send-us-message .buttom-message input {
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  width: 266px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid rgba(125, 125, 125, 0.3882352941);
+}
+#send-us-message .buttom-message textarea {
+  outline: none;
+  border: none;
+  width: 97%;
+  border: 1px solid rgba(125, 125, 125, 0.3882352941);
+  margin-bottom: 20px;
+}
+#send-us-message .buttom-message button {
+  background-color: #ff6000;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+#send-us-message .buttom-message button:hover {
+  background-color: black;
 }
 
 fieldset, label {

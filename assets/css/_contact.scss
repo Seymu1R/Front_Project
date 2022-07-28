@@ -1,0 +1,79 @@
+#contact-info {
+    padding: 100px 0;
+
+    img {
+        width: 80px;
+    }
+
+    P {
+        font-size: 15px;
+        color: #7D7d7d;
+    }
+
+    h5 {
+        margin: 15px 0;
+    }
+
+    .all {
+        div {
+            padding: 40px 0;
+            border: 1px solid #7d7d7d63;
+            width: 380px;
+        }
+    }
+
+   
+}
+#send-us-message {
+    padding-bottom: 100px;
+    .top-mesage{
+        padding-bottom: 70px;
+        span {
+            display: block;
+            line-height: 1;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #ff6000;
+            margin-bottom: 15px;
+        }
+    }
+    .buttom-message{
+        .first-name, .last-name, .e-mail, .phone{
+           i{
+            right: 30px;
+            top:7px;
+            color: #7D7d7d;
+           }
+        }
+        input{
+            outline: none;
+            border: none;
+            padding: 10px 0;
+            width: 266px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            border: 1px solid #7d7d7d63;
+        }
+        textarea{
+            outline: none;
+            border: none;
+            width: 97%;
+            border: 1px solid #7d7d7d63;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: #ff6000;
+            color: white;
+            outline: none;
+            border: none;
+            padding: 15px 45px;
+            border-radius: 5px;
+            transition: .5s all;
+            &:hover{
+                background-color: black;
+            }
+        }
+    }
+    
+}
