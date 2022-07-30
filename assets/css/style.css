@@ -2079,6 +2079,9 @@
   margin: 10px 0;
   border: 1px solid rgba(125, 125, 125, 0.3843137255);
 }
+#basket-products .basket-items .mid-header #remove-item {
+  cursor: pointer;
+}
 #basket-products .basket-items .mid-header input {
   width: 80px;
   outline: none;

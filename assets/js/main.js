@@ -34,6 +34,7 @@ function addToCart(ev) {
     result.count++;
   }
   localStorage.setItem("basket", JSON.stringify(basket));
+  showCount();
 
 
 
@@ -58,10 +59,15 @@ $(document).ready(function () {
 
 });
 
+let showCount = ()=>{
+  let basket = JSON.parse(localStorage.getItem("basket"));
+  getBasketCount.innerText=basket.length; 
+};
+showCount();
 
 
 
-console.log(getBasketCount);
+
 
 
 
