@@ -2135,6 +2135,7 @@
   font-size: 12px;
 }
 #basket-products .basket-items .buttom-header #uptade {
+  cursor: pointer;
   opacity: 0.4;
 }
 #basket-products .basket-items .buttom-header #uptade:hover {

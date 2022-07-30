@@ -1,6 +1,7 @@
 let basket = JSON.parse(localStorage.getItem("basket"));
 let addItem = document.querySelector(".add-item-to-basket");
 let getBasketCount = document.getElementById("basket-count");
+let uptadeBtn=document.querySelector("#uptade");
 
 //adding content basket
 
@@ -27,7 +28,7 @@ basket.forEach(item => {
                  <i onClick="cahangeBasketitemcountplus(event)" class="position-absolute fa-solid fa-plus"></i>
                  </div>
                  <div class="col-xl-2">
-                 <p>$4,800.00</p>
+                 <p id="product-total" >$${item.productTotal}</p>
         </div>
     </div>
      
@@ -55,25 +56,24 @@ let removeBasketcontent = (e) => {
 }
 let cahangeBasketitemcountplus=(e)=>{
     basketEdit=JSON.parse(localStorage.getItem("basket"));
-    document.querySelector("#uptade").style.opacity="1";
+    uptadeBtn.style.opacity="1";
     let parent=e.target.parentElement.parentElement;
     e.target.previousElementSibling.value++;
     let input = e.target.previousElementSibling.value;
      let inputIncrease= input++;
      basketEdit.forEach(item => {
         let id =+parent.querySelector("#product-id-span-hidden").innerHTML;
-        if (item.productId == id) {
-            console.log("salam");
+        if (item.productId == id) {            
             item.count=inputIncrease;
             localStorage.setItem("basket",JSON.stringify(basketEdit))
         }
         
     });
-    console.log( inputIncrease);
+    
 }
 let cahangeBasketitemcountminus=(e)=>{
     basketEdit=JSON.parse(localStorage.getItem("basket"));
-    document.querySelector("#uptade").style.opacity="1";    
+    uptadeBtn.style.opacity="1";    
     let parent=e.target.parentElement.parentElement;
     e.target.nextElementSibling.value--;
     let input = e.target.nextElementSibling.value;
@@ -84,19 +84,63 @@ let cahangeBasketitemcountminus=(e)=>{
     
     basketEdit.forEach(item => {
         let id =+parent.querySelector("#product-id-span-hidden").innerHTML;
-        if (item.productId == id) {
-            console.log("salam");
+        if (item.productId == id) {            
             item.count=inputdecrease;
             localStorage.setItem("basket",JSON.stringify(basketEdit))
         }
         
     });
   
-    console.log(inputdecrease);
+    
 }
+
+let editSubtotal = (e)=>{
+    basketSubtotal=JSON.parse(localStorage.getItem("basket"));
+    basketSubtotal.forEach(item=>{
+        item.productTotal=item.productP*item.count;          
+        localStorage.setItem("basket",JSON.stringify(basketSubtotal));
+    })
+    
+}
+let editItem = (e, id) => {
+    let basketedit = JSON.parse(localStorage.getItem("basket"));
+    let inputEdit = e.target.parentElement.parentElement.querySelector("#input-count");   
+  
+    if (inputEdit.value < 0) {
+      inputEdit.value = 1;
+      if ((inputEdit.value = 1)) {
+        for (let item of basketedit) {
+          if (item.productId == id) {
+            item.count = inputEdit.value;
+  
+            localStorage.setItem("basket", JSON.stringify(basketedit));
+            let totalNum =
+              e.target.parentElement.parentElement.parentElement.querySelector(
+                "#total-num"
+              );
+            totalNum.innerText = item.count * item.productP;
+          }
+        }
+      }
+    } else {
+      for (let item of basketedit) {
+        if (item.productId == id) {
+          item.count = inputEdit.value;
+  
+          localStorage.setItem("basket", JSON.stringify(basketedit));
+          let totalNum =
+            e.target.parentElement.parentElement.parentElement.querySelector(
+              "#total-num"
+            );
+          totalNum.innerText = item.count * item.productP;
+        }
+      }
+    }
+  };
 let showCount = ()=>{
     let basket = JSON.parse(localStorage.getItem("basket"));
     getBasketCount.innerText=basket.length; 
 };
+
 showCount();
 

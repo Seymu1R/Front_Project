@@ -24,7 +24,8 @@ function addToCart(ev) {
       productT: productTitle,
       productI: productimgSrc,
       productP: productPrice,
-      count: 1
+      count: 1,
+      productTotal:0
     });
 
 
