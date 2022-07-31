@@ -802,6 +802,9 @@
 #futured-products {
   padding: 100px 0;
 }
+#futured-products h4 {
+  font-size: 20px;
+}
 #futured-products #hover-div {
   margin-bottom: 20px;
   transition: 1s all;

@@ -90,6 +90,10 @@ $(document).ready(function () {
       }
     ]
   })
+  
+});
+
+function mostPopularSlick() {
   $(".center-2").slick({
     centerMode: true,
     centerPadding: '50px',
@@ -118,4 +122,4 @@ $(document).ready(function () {
       }
     ]
   })
-});
+}
