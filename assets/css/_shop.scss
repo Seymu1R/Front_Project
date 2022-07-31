@@ -253,7 +253,37 @@
     }
 
     .all-categories-slider {
-        padding: 40px 0;
+        background-color: #f2f2f2;
+        padding-top: 40px;
+        h4{
+            margin-bottom: 20px;
+        }
+
+        #slider-shop-1{
+            h4{
+                margin-top: 20px ;
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                position: relative;
+                button{
+                    &:first-child{
+                        right: 20px;
+                    }
+                    position: absolute;
+                    margin: 0 20px;
+                    right: 0;
+                    top:-280px;
+                    i{
+                        font-size: 14px;
+                        margin-right: 20px;
+                    }
+                }
+
+            }
+        }
+            
 
         .slider {
             img {

@@ -108,7 +108,7 @@ function setIsotope() {
     $grid.isotope({ filter: filterValue });
   });
 }
-
+setIsotope();
 
 
 
