@@ -9,7 +9,7 @@ function getProducts() {
       case "shopslider":
         return `
         <div class="  text-center ${classNames} ">
-        <a href="detail.html"><img src="${item.image}" alt=""></a>
+            <img src="${item.image}" alt="">
                               <h4>${item.category}</h4>
                          <div class="stock">
                     <span>4</span>
@@ -22,7 +22,7 @@ function getProducts() {
         <div id="hover-div" class="${classNames}">
             <div class="row">
               <div class="col-xl-6">
-              <a href="detail.html"><img src="${item.image}" alt=""></a> 
+                <img src="${item.image}" alt="">
               </div>
               <div class="col-xl-6">
                 <h6>${item.title}</h6>
@@ -49,7 +49,7 @@ function getProducts() {
                <h6>${item.title}</h6>
                  <span id="discount">$${item.price+10}</span><span>$${item.price}</span>
                     </div>
-                    <div class="col-xl-4"><a href="detail.html"><img src="${item.image}" alt=""></a> </div>
+                    <div class="col-xl-4"><img src="${item.image}" alt=""></div>
                     </div>
                 </div>
         `
@@ -60,7 +60,7 @@ function getProducts() {
         return `
         <div class="${classNames} ${item.category}">
         <div class=" product-items">
-        <a href="detail.html"><img src="${item.image}" alt=""></a> 
+          <img src="${item.image}" alt="">
           <a href="">${item.title}</a>
           <p>US ${item.price} <span>|</span><span>{ 4% off }</span></p>
           <div class="hover-detail">
@@ -101,7 +101,7 @@ function getProducts() {
         return `
         <div class="${classNames} product-items">
           <span class="span-id" hidden >${item.id}</span>
-          <a href="detail.html"> <img class="img-products" src="${item.image}" alt=""/></a> 
+          <img class="img-products" src="${item.image}" alt=""/>
               <a href="" id="product-title" >${item.title}</a>
               <p>US $ <span id="product-price">${item.price}</span> <span>|</span><span>{4 % off}</span></p>
               <div class="hover-detail">
@@ -140,7 +140,7 @@ function getProducts() {
   getProducts().then(products => {
     let featureProducts = products.sort(() => 0.5 - Math.random()).slice(0, 9);
     let onsaleproducts = products.sort(() => 0.5 - Math.random()).slice(0, 3);
-    let onsaleproducts2 = products.sort(() => 0.5 - Math.random()).slice(4, 7);
+    let onsaleproducts2 = products.sort(() => 0.5 - Math.random());
     let sliderShopCategories=products.sort(()=>0.5-Math.random());
     let bestSellingCategories = $("#bestSellingCategories");
   
@@ -154,37 +154,44 @@ function getProducts() {
       `)
     })
     onsaleproducts2.forEach(product=>{
-        document.querySelector("#on-sale-product-buttom").innerHTML+=getProductContent(product,"on-sale-products", "col-xl-12")
+        document.querySelector("#detail-slider").innerHTML+=getProductContent(product,"sa", "col-xl-2-5")
     })
-  
-    onsaleproducts.forEach(product=>{
-        document.querySelector("#on-sale-products-top").innerHTML+=getProductContent(product,"on-sale-products", "col-xl-12")
-    })
-    sliderShopCategories.forEach(slider=>{
-      document.querySelector("#slider-shop-1").innerHTML+=getProductContent(slider,"shopslider","position-relative");
-    })
-    featureProducts.forEach(featured=>{
-        document.querySelector("#featured").innerHTML+=getProductContent(featured,"featured","col-xl-4")
-    })
-   
-    $('.owl-carousel').owlCarousel({
-        loop: false ,
-        margin: 10,
-        nav: true,
-        navText:["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
-        items:4,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
+
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToShow: 5,
+        slidesToScroll:1,
+        pauseOnHover:true,
+        autoplay:true,
+        accessibility:true,
+        autoplaySpeed:4000,
+        arrows:true,    
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
             }
-        }
-    })
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      })
+  
+    
+   
+    
    
   
     

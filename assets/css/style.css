@@ -2212,6 +2212,50 @@
   background-color: #ff6000;
 }
 
+#items-purchased .product-items {
+  position: relative;
+  text-align: center;
+}
+#items-purchased .product-items:hover .hover-detail {
+  opacity: 1;
+  visibility: visible;
+  height: 80px;
+}
+#items-purchased .product-items p {
+  color: #ff6000;
+}
+#items-purchased .product-items p span {
+  margin-right: 10px;
+  color: #858585;
+}
+#items-purchased .product-items img {
+  width: 100%;
+}
+#items-purchased .product-items .hover-detail {
+  position: absolute;
+  bottom: 78px;
+  left: 25px;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+#items-purchased .product-items .hover-detail .top {
+  background-color: #ffffff;
+}
+#items-purchased .product-items .hover-detail .top svg {
+  margin: 0 15px 10px;
+}
+#items-purchased .product-items .hover-detail button {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
 fieldset, label {
   margin: 0;
   padding: 0;

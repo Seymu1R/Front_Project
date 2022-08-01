@@ -52,6 +52,7 @@ let removeBasketcontent = (e) => {
 
   localStorage.setItem("basket", JSON.stringify(basketarr));
   parent.remove();
+  emptyBasket();
   showCount();
 }
 let cahangeBasketitemcountplus = (e) => {
@@ -77,19 +78,20 @@ let cahangeBasketitemcountminus = (e) => {
   let inputValue = e.target.nextElementSibling.value;
   console.log(inputValue);
   if (inputValue<=0) {
-    e.target.parentElement.parentElement.remove();    
+    e.target.parentElement.parentElement.remove(); 
+    let result = basketEdit.find((item) => item.productId == productid);
+  console.log(result);
+  index = basketEdit.indexOf(result);
+  if (index > -1) {
+    basketEdit.splice(index, 1);
+  }    
   }
   basketEdit.forEach(item=>{
     if (item.productId==productid) {
       item.count=inputValue;
     }
   })
-  let result = basketEdit.find((item) => item.productId == productid);
-  console.log(result);
-  index = basketEdit.indexOf(result);
-  if (index > -1) {
-    basketEdit.splice(index, 1);
-  }
+  
   uptadeBtn.style.opacity = "1";
   localStorage.setItem("basket", JSON.stringify(basketEdit))
 }
@@ -97,11 +99,11 @@ let cahangeBasketitemcountminus = (e) => {
 let editSubtotal = (e) => {
   let cartItems = document.querySelectorAll(".cart-item");
   basketEdit = JSON.parse(localStorage.getItem("basket"));
-
+  let a = 0;
   cartItems.forEach(cartItem => {
     let productId = cartItem.getAttribute("data-id");
     let productPrice = +cartItem.querySelector(".product-price").innerText.replace("$", "")
-    let productQauntity = +cartItem.querySelector(".product-quantity").value;
+    let productQauntity = cartItem.querySelector(".product-quantity").value;
     let productTotal = cartItem.querySelector(".productTotal");
 
     let basketItem = basketEdit.find(basket => basket.productId == productId);
@@ -110,6 +112,8 @@ let editSubtotal = (e) => {
     basketItem.productTotal = basketItem.productP * basketItem.count;
 
     productTotal.innerText = basketItem.productTotal;
+    a+=basketItem.productTotal
+    totalValues(a);
 
     localStorage.setItem("basket", JSON.stringify(basketEdit))
 
@@ -118,10 +122,23 @@ let editSubtotal = (e) => {
  
 
 }
+let totalValues=(value)=>{
+  let generals=document.querySelectorAll(".totals-values-general");
+  for (const iterator of  generals) {
+    iterator.innerHTML=value;    
+  }
+}
 let showCount = () => {
   let basket = JSON.parse(localStorage.getItem("basket"));
   getBasketCount.innerText = basket.length;
 };
+let emptyBasket=()=>{
+  let basket = JSON.parse(localStorage.getItem("basket"));
+  if (basket.length==0) {
+    document.querySelector(".basket-items").style.display="none";    
+  }
+}
+emptyBasket();
 
 showCount();
 

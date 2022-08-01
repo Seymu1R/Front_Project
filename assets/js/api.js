@@ -43,7 +43,8 @@ function getProductContent(item, type, classNames = "") {
     case "mostPopular":
       return `
         <div class="col-xl-3 product-items-papular">
-          <img src="${item.image}" alt="">
+        <span class="span-id" hidden >${item.id}</span>
+         <a href="detail.html"><img src="${item.image}" alt=""></a>          
           <a href="">${item.title}</a>
           <p>US $${item.price} <span>|</span><span>{ 4% off }</span></p>
           <div class="hover-detail">
@@ -93,8 +94,9 @@ function getProductContent(item, type, classNames = "") {
     case "bestSelling":
       return `
       <div class="${classNames} ${item.category}">
+      <span class="span-id" hidden >${item.id}</span>
       <div class=" product-items">
-        <img src="${item.image}" alt="">
+      <a href="detail.html"><img src="${item.image}" alt=""></a> 
         <a href="">${item.title}</a>
         <p>US ${item.price} <span>|</span><span>{ 4% off }</span></p>
         <div class="hover-detail">
@@ -135,7 +137,8 @@ function getProductContent(item, type, classNames = "") {
       return `
       <div class="${classNames} product-items">
         <span class="span-id" hidden >${item.id}</span>
-        <img class="img-products" src="${item.image}" alt=""/>
+        <a href="detail.html"> <img class="img-products" src="${item.image}" alt=""/></a> 
+       
             <a href="" id="product-title" >${item.title}</a>
             <p>US $ <span id="product-price">${item.price}</span> <span>|</span><span>{4 % off}</span></p>
             <div class="hover-detail">

@@ -59,37 +59,7 @@ $(document).ready(function () {
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
-  $('.center').slick({
-    centerMode: true,
-    centerPadding: '50px',
-    slidesToShow: 5,
-    slidesToScroll:1,
-    pauseOnHover:true,
-    autoplay:true,
-    accessibility:true,
-    autoplaySpeed:4000,
-    arrows:true,    
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  })
+  
   
 });
 
@@ -123,3 +93,7 @@ function mostPopularSlick() {
     ]
   })
 }
+
+
+
+
