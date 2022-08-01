@@ -1,6 +1,6 @@
 let basket = JSON.parse(localStorage.getItem("basket"));
 let addItem = document.querySelector(".add-item-to-basket");
-let getBasketCount = document.getElementById("basket-count");
+let getBasketCount1 = document.getElementById("basket-count-1");
 let uptadeBtn = document.querySelector("#uptade");
 
 //adding content basket
@@ -128,9 +128,9 @@ let totalValues=(value)=>{
     iterator.innerHTML=value;    
   }
 }
-let showCount = () => {
+let showCount1 = () => {
   let basket = JSON.parse(localStorage.getItem("basket"));
-  getBasketCount.innerText = basket.length;
+  getBasketCount1.innerText = basket.length;
 };
 let emptyBasket=()=>{
   let basket = JSON.parse(localStorage.getItem("basket"));
@@ -139,6 +139,7 @@ let emptyBasket=()=>{
   }
 }
 emptyBasket();
+showCount1();
 
-showCount();
+
 

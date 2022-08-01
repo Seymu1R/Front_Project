@@ -1,4 +1,3 @@
-"use strict";
 let getMoneystate = document.getElementById("money");
 let getSellwithus = document.getElementById("sell-with-us");
 let getBtns = document.querySelectorAll(".btn-add-chart");
@@ -25,7 +24,7 @@ function addToCart(ev) {
       productI: productimgSrc,
       productP: productPrice,
       count: 1,
-      productTotal:0
+      productTotal: 0
     });
 
 
@@ -60,40 +59,19 @@ $(document).ready(function () {
 
 });
 
-let showCount = ()=>{
-  let basket = JSON.parse(localStorage.getItem("basket"));
-  getBasketCount.innerText=basket.length; 
+let showCount = () => {
+  try {
+    let basket = JSON.parse(localStorage.getItem("basket"));
+    getBasketCount.innerText = basket.length;
+  } catch (error) {
+
+  }
 };
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 5, 2022 15:37:25").getTime();
+
 
 // Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("day").innerHTML = days ;
-  document.getElementById("hour").innerHTML=hours;
-  document.getElementById("min").innerHTML=minutes;
-  document.getElementById("sec").innerHTML=seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
 showCount();
 
 
@@ -108,7 +86,44 @@ function setIsotope() {
     $grid.isotope({ filter: filterValue });
   });
 }
-setIsotope();
+// setIsotope();  
+window.onscroll = () => {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {   
+    document.querySelector(".all-catogories-catalog").style.top="75px";
+    document.querySelector("#header-buttom-part").style.position = "fixed";
+    document.querySelector("#header-buttom-part").style.width = "100%";
+    document.querySelector("#header-buttom-part").style.top = "0";
+    document.querySelector("#header-buttom-part").style.zIndex = "111111";
+    document.querySelector("#header-buttom-part").style.backgroundColor = "#ffffff";
+    document.querySelector("#header-buttom-part").classList.add("active");
+    document.querySelector(".home-cataloge-2").style.top = "75px";
+    document.querySelector(".home-cataloge-2").style.left = "600px";
+    document.querySelector(".categories-catalog-2").style.top = "75px";
+    document.querySelector(".categories-catalog-2").style.zIndex = "11111";
+    document.querySelector(".categories-catalog-2").style.height = "600px";    
+    document.querySelector(".shop-categories-2").style.top = "75px";
+    document.querySelector(".pages-categories-2").style.top = "75px";
+    document.querySelector(".specila-categories-2").style.top = "75px";
+    document.querySelector(".specila-categories-2").style.height = "600px";
+    document.querySelector(".store-list-categories-2").style.top = "75px";
+    document.querySelector("#go-to-up").style.display="block";
+
+  }
+  else {
+    document.querySelector("#go-to-up").style.display="none";
+    document.querySelector(".all-catogories-catalog").style.top="210px";
+    document.querySelector(".store-list-categories-2").style.top = "210px";
+    document.querySelector(".specila-categories-2").style.top = "210px";
+    document.querySelector(".pages-categories-2").style.top = "210px";
+    document.querySelector(".shop-categories-2").style.top = "210px";
+    document.querySelector(".categories-catalog-2").style.top = "210px";
+    document.querySelector(".home-cataloge-2").style.top = "210px";
+    document.querySelector(".home-cataloge-2").style.left = "600px";
+    document.querySelector("#header-buttom-part").style.position = "static";
+    document.querySelector("#header-buttom-part").style.backgroundColor = "#0465d2";
+    document.querySelector("#header-buttom-part").classList.remove("active");
+  }
+}
 
 
 

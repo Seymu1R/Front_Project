@@ -483,6 +483,21 @@
   display: block;
 }
 
+#go-to-up {
+  display: none;
+  z-index: 1111;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: #f7ba01;
+  padding: 15px;
+}
+#go-to-up i {
+  font-size: 14px;
+  color: black;
+}
+
 #slider {
   background-color: #f3f2ee;
   padding: 100px 0;
@@ -2327,6 +2342,10 @@ ul {
   list-style: none;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 header .top {
   padding: 5px 0;
   background-color: rgb(238, 238, 238);
@@ -2583,6 +2602,9 @@ header .svgs .shopBag .svg-shopBag-span {
 }
 header .svgs .shopBag .svg-shopBag-span span {
   font-size: 10px;
+}
+header .active a {
+  color: black !important;
 }
 header .buttom {
   background-color: #0465d2;
@@ -2867,6 +2889,7 @@ header .buttom .special-categories-1 .specila-categories-2 {
   left: 178px;
   top: 205px;
   height: 0;
+  visibility: hidden;
   opacity: 0;
   height: 0;
   overflow: hidden;

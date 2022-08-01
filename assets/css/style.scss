@@ -74,6 +74,9 @@ a {
 ul {
   list-style: none;
 }
+html, body{ 
+  scroll-behavior: smooth;
+}
 
 header {
   .top {
@@ -341,7 +344,11 @@ header {
       }
     }
   }
-  
+   .active{
+    a{
+      color: black !important;
+    }
+   }
   
     
   .buttom {
@@ -455,7 +462,7 @@ header {
         color: #e2e2e2;
         font-family: bold;
       }
-      .categories-catalog-1 {
+      .categories-catalog-1 {        
         margin-left: 35px;
         
         .categories-catalog-3{
@@ -661,6 +668,7 @@ header {
         left: 178px;
         top: 205px;
         height: 0;
+        visibility: hidden;
         opacity: 0;
         height: 0;
         overflow: hidden;
