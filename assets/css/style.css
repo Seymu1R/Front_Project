@@ -47,6 +47,52 @@
     color: white;
     margin-right: 20px;
   }
+  main .sliders .slider-image img {
+    width: 100%;
+  }
+  main .sliders .all {
+    flex-direction: column;
+  }
+  main #products-index-html:hover .hover-detail {
+    visibility: visible;
+    height: 80px;
+  }
+  main .product-items {
+    position: static;
+  }
+  main .product-items .hover-detail {
+    position: static !important;
+    bottom: 0;
+    opacity: 1 !important;
+    visibility: visible;
+  }
+  main #deals-of-day .buttom-right {
+    display: none;
+  }
+  main #best-selling-products .img {
+    display: none;
+  }
+  footer #offer {
+    text-align: center !important;
+  }
+  footer #img-footer-70 {
+    text-align: center !important;
+  }
+  footer #subscribe-now button {
+    width: 100%;
+  }
+  footer #subscribe-now .container {
+    padding: 0 10px !important;
+    margin: 0 !important;
+  }
+  footer #find-out-more .container {
+    padding: 0 10px !important;
+    margin: 0 !important;
+  }
+  footer #venam-footer .container, footer #pay-pal .container {
+    padding: 0 10px !important;
+    margin: 0 !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   header .top .all {

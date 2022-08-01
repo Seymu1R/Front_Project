@@ -42,6 +42,80 @@
       }
     }
   }
+  main{
+    .sliders{
+      .slider-image{
+        img{
+          width: 100%;
+        }
+      }
+      .all{
+        flex-direction: column;
+      }
+    }
+    #products-index-html{
+      &:hover {
+        & .hover-detail {
+            
+            visibility: visible;
+            height: 80px;
+        }
+    }
+  }
+  
+    .product-items{
+      position: static;
+      .hover-detail{
+        position: static !important;
+        
+        bottom: 0;
+        opacity: 1 !important;
+        visibility: visible;
+      }
+    }
+    #deals-of-day{
+      .buttom-right{
+        display: none;
+      }
+    }
+    #best-selling-products{
+      .img{
+        display: none;
+      }
+    }
+
+    
+  }
+  footer{
+    #offer{
+      text-align: center !important;
+    }
+    #img-footer-70{
+      text-align: center !important;
+    }
+    #subscribe-now{
+      button{
+        width: 100%;
+      }
+      .container{
+        padding: 0 10px !important;
+        margin: 0 !important;
+      }
+    }
+    #find-out-more{
+      .container{
+        padding: 0 10px !important;
+        margin: 0 !important;
+      }
+    }
+    #venam-footer, #pay-pal{
+      .container{
+        padding: 0 10px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+  
 }
 
 @media (min-width: 576px) and (max-width: 768px) {

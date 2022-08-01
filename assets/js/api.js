@@ -21,10 +21,10 @@ function getProductContent(item, type, classNames = "") {
       return `
       <div id="hover-div" class="${classNames}">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6  col-6">
               <img src="${item.image}" alt="">
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6  col-6">
               <h6>${item.title}</h6>
               <p>US ${item.price}</p>
               <div class="raiting">
@@ -198,7 +198,7 @@ getProducts().then(products => {
   });
 
   indexProducts.forEach(indexProduct => {
-    document.querySelector("#index-product-1").innerHTML += getProductContent(indexProduct, "index", "col-xl-2-5");
+    document.querySelector("#index-product-1").innerHTML += getProductContent(indexProduct, "index", "col-xl-2-5  col-6");
   });
 
   dealsOfTheDay.forEach(indexProduct => {
