@@ -2,6 +2,7 @@ let getMoneystate = document.getElementById("money");
 let getSellwithus = document.getElementById("sell-with-us");
 let getBtns = document.querySelectorAll(".btn-add-chart");
 let getBasketCount = document.getElementById("basket-count");
+let cartEmptydiv = document.querySelector("#mause-enter-div-cart");
 
 
 if (localStorage.getItem("basket") === null) {
@@ -73,8 +74,6 @@ let showCount = () => {
 // Update the count down every 1 second
 
 showCount();
-
-
 function setIsotope() {
   // init Isotope
   var $grid = $('.items-details-isotope').isotope({
@@ -86,7 +85,22 @@ function setIsotope() {
     $grid.isotope({ filter: filterValue });
   });
 }
-// setIsotope();  
+// setIsotope();
+
+
+let shovEmptydiv=(e)=>{
+  basket = JSON.parse(localStorage.getItem("basket"));
+  if (basket.length==0) {
+    cartEmptydiv.style.opacity="1";
+    cartEmptydiv.style.visibility="visible";
+  }
+ 
+}
+let noshowemptydiv=(e)=>{
+  cartEmptydiv.style.opacity="0";
+  cartEmptydiv.style.visibility="hidden";
+}
+
 window.onscroll = () => {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {   
     document.querySelector(".all-catogories-catalog").style.top="75px";

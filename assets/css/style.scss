@@ -79,6 +79,33 @@ html, body{
 }
 
 header {
+  #mause-enter-div-cart{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 111111;
+    padding: 20px;
+    width: 400px;
+    transition: .8s all;
+    background-color: #ffffff;
+    right: 150px;
+    top: 120px;
+    text-align: start;
+    #start-shoping{
+      background-color: #f7ba01;
+      color: black;
+    }
+    #return-policy{
+      background-color: black;
+      color: #ffffff;
+    }
+    button{
+      outline: none;
+      border: none;      
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+  }
   .top {
     padding: 5px 0;
     background-color: rgb(238, 238, 238);

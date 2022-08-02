@@ -28,7 +28,7 @@ basket.forEach(item => {
                  <i onClick="cahangeBasketitemcountplus(event)" class="position-absolute fa-solid fa-plus"></i>
                  </div>
                  <div class="col-xl-2">
-                 <p>$<span class="productTotal" id="product-total"   >${item.count*item.productP}</span> </p>
+                 <p>$<span class="productTotal" id="product-total">${item.count*item.productP}</span> </p>
         </div>
     </div>
      
@@ -54,6 +54,7 @@ let removeBasketcontent = (e) => {
   parent.remove();
   emptyBasket();
   showCount();
+  totalValuesBegin();
 }
 let cahangeBasketitemcountplus = (e) => {
   basketEdit = JSON.parse(localStorage.getItem("basket"));
@@ -68,7 +69,9 @@ let cahangeBasketitemcountplus = (e) => {
   localStorage.setItem("basket", JSON.stringify(basketEdit));
 
   
-  uptadeBtn.style.opacity = "1";  
+  uptadeBtn.style.opacity = "1"; 
+  emptyBasket();
+  showCount(); 
 }
 
 let cahangeBasketitemcountminus = (e) => {
@@ -93,7 +96,9 @@ let cahangeBasketitemcountminus = (e) => {
   })
   
   uptadeBtn.style.opacity = "1";
-  localStorage.setItem("basket", JSON.stringify(basketEdit))
+  localStorage.setItem("basket", JSON.stringify(basketEdit));
+  showCount();
+  emptyBasket();
 }
 
 let editSubtotal = (e) => {
@@ -114,10 +119,10 @@ let editSubtotal = (e) => {
     productTotal.innerText = basketItem.productTotal;
     a+=basketItem.productTotal
     totalValues(a);
-
     localStorage.setItem("basket", JSON.stringify(basketEdit))
-
   })
+  emptyBasket();
+  showCount();
 
  
 
@@ -128,18 +133,31 @@ let totalValues=(value)=>{
     iterator.innerHTML=value;    
   }
 }
-let showCount1 = () => {
-  let basket = JSON.parse(localStorage.getItem("basket"));
-  getBasketCount1.innerText = basket.length;
-};
+let totalValuesBegin=()=>{
+  basketTotal = JSON.parse(localStorage.getItem("basket"));
+  a=0;
+  basketTotal.forEach(item=>{
+    
+    a+=item.count*item.productP;
+    totalValues(a);
+
+  })
+}
+totalValuesBegin();
 let emptyBasket=()=>{
   let basket = JSON.parse(localStorage.getItem("basket"));
   if (basket.length==0) {
-    document.querySelector(".basket-items").style.display="none";    
+    document.querySelector(".basket-items").style.display="none"; 
+    document.querySelector(".empty-part").style.display="block"   
   }
+  if (basket.length>0) {
+    document.querySelector(".empty-part").style.display="none"
+  }
+  
+  
 }
 emptyBasket();
-showCount1();
+showCount();
 
 
 

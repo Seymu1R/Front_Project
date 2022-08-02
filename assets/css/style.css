@@ -2427,6 +2427,33 @@ html, body {
   scroll-behavior: smooth;
 }
 
+header #mause-enter-div-cart {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 111111;
+  padding: 20px;
+  width: 400px;
+  transition: 0.8s all;
+  background-color: #ffffff;
+  right: 150px;
+  top: 120px;
+  text-align: start;
+}
+header #mause-enter-div-cart #start-shoping {
+  background-color: #f7ba01;
+  color: black;
+}
+header #mause-enter-div-cart #return-policy {
+  background-color: black;
+  color: #ffffff;
+}
+header #mause-enter-div-cart button {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
 header .top {
   padding: 5px 0;
   background-color: rgb(238, 238, 238);
