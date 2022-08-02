@@ -21,10 +21,10 @@ function getProducts() {
         return `
         <div id="hover-div" class="${classNames}">
             <div class="row">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-6 ">
               <a href="detail.html"><img src="${item.image}" alt=""></a> 
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6  col-6">
                 <h6>${item.title}</h6>
                 <p>US $ ${item.price}</p>
                 <div class="raiting">
@@ -164,7 +164,7 @@ function getProducts() {
       document.querySelector("#slider-shop-1").innerHTML+=getProductContent(slider,"shopslider","position-relative");
     })
     featureProducts.forEach(featured=>{
-        document.querySelector("#featured").innerHTML+=getProductContent(featured,"featured","col-xl-4")
+        document.querySelector("#featured").innerHTML+=getProductContent(featured,"featured","col-xl-4 col-12")
     })
    
     $('.owl-carousel').owlCarousel({

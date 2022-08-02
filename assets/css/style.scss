@@ -285,9 +285,10 @@ header {
   .svgs {
     display: flex;
     justify-content: end;
-    svg {
+    a{
       margin-left: 20px;
-    }
+
+    }   
 
     .svgCompare {
       position: relative;

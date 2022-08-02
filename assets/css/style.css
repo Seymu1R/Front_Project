@@ -8,6 +8,9 @@
 }
 
 @media (max-width: 576px) {
+  header .top .container {
+    padding: 0 20px !important;
+  }
   header .top .all {
     display: flex;
     align-items: center !important;
@@ -72,6 +75,27 @@
   main #best-selling-products .img {
     display: none;
   }
+  main #shop-left-filters {
+    display: none;
+  }
+  main #photo-right-shop-filters {
+    display: none;
+  }
+  main .all-categories-slider .owl-prev {
+    bottom: 100px;
+  }
+  main .all-categories-slider .owl-next {
+    bottom: 100px;
+  }
+  main #futured-products .container {
+    padding: 0 10px !important;
+  }
+  main #right-modern-button-img {
+    display: none;
+  }
+  main .container {
+    padding: 0 10px !important;
+  }
   footer #offer {
     text-align: center !important;
   }
@@ -85,6 +109,9 @@
     padding: 0 10px !important;
     margin: 0 !important;
   }
+  footer #find-out-more ul {
+    display: none !important;
+  }
   footer #find-out-more .container {
     padding: 0 10px !important;
     margin: 0 !important;
@@ -92,6 +119,14 @@
   footer #venam-footer .container, footer #pay-pal .container {
     padding: 0 10px !important;
     margin: 0 !important;
+  }
+  #detail-product .container {
+    padding: 0 5px !important;
+    margin: 0;
+  }
+  #tab-menu .container, #product-reviews .container {
+    padding: 0 10px !important;
+    margin: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -2595,7 +2630,7 @@ header .svgs {
   display: flex;
   justify-content: end;
 }
-header .svgs svg {
+header .svgs a {
   margin-left: 20px;
 }
 header .svgs .svgCompare {

@@ -43,6 +43,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    mobileFirst:true,
+    respondTo:'min',
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
@@ -51,33 +53,18 @@ $(document).ready(function () {
     asNavFor: '.slider-for',
     dots: false,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    mobileFirst:true,
+    respondTo:'min',
+    
+    
   });
   $('a[data-slide]').click(function (e) {
     e.preventDefault();
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
-  $('.slider').owlCarousel({
-    loop:true,
-    items:1,    
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:1,
-            nav:true,
-            loop:false
-        }
-    }
-})
+ 
   
   
 });
