@@ -50,6 +50,54 @@
     color: white;
     margin-right: 20px;
   }
+  header #phone-slide-bar {
+    visibility: hidden;
+    position: fixed;
+    z-index: 11111;
+    top: 60px;
+    width: 0;
+    transition: 0.8s all;
+    opacity: 0;
+    background-color: black;
+    display: block !important;
+    height: 100vh;
+  }
+  header #phone-slide-bar .container {
+    padding: 0 20px !important;
+  }
+  header #phone-slide-bar .buttons button {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+  }
+  header #phone-slide-bar .buttons i {
+    font-size: 20px;
+    background-color: black;
+  }
+  header #phone-slide-bar .contents-buttom a {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    color: #ffffff;
+  }
+  header #phone-slide-bar .contents-buttom li {
+    display: inline;
+  }
+  header #phone-slide-bar .contents-buttom i {
+    background-color: #373737 !important;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+  }
+  header #phone-slide-bar .social-medya i {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  header #phone-slide-bar i {
+    font-size: 50px;
+    color: white;
+  }
   main .sliders .slider-image img {
     width: 100%;
   }
@@ -130,6 +178,9 @@
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .top .all {
     display: flex !important;
     align-items: center !important;
@@ -172,6 +223,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .buttom {
     display: none;
   }
@@ -230,6 +284,9 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .header-phone {
     display: none;
   }
@@ -315,6 +372,9 @@
   }
 }
 @media (min-width: 1024px) and (max-width: 1140px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .header-phone {
     display: none;
   }
@@ -361,6 +421,9 @@
   }
 }
 @media (min-width: 1140px) and (max-width: 1400px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .header-phone {
     display: none;
   }
@@ -407,6 +470,9 @@
   }
 }
 @media (min-width: 1400px) {
+  #phone-slide-bar {
+    display: none;
+  }
   header .header-phone {
     display: none;
   }

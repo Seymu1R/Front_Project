@@ -3,7 +3,7 @@ let getSellwithus = document.getElementById("sell-with-us");
 let getBtns = document.querySelectorAll(".btn-add-chart");
 let getBasketCount = document.getElementById("basket-count");
 let cartEmptydiv = document.querySelector("#mause-enter-div-cart");
-
+let phoneSdiebar = document.getElementById("phone-slide-bar");
 
 if (localStorage.getItem("basket") === null) {
   localStorage.setItem("basket", JSON.stringify([]));
@@ -68,6 +68,15 @@ let showCount = () => {
 
   }
 };
+let phoneSiderbarOpen=(e)=>{
+  phoneSdiebar.style.opacity="1";
+  phoneSdiebar.style.visibility="visible";
+  phoneSdiebar.style.width="100%";
+}
+let  closeSidebar=(e)=>{
+  phoneSdiebar.style.opacity="0";
+  phoneSdiebar.style.visibility="hidden";
+}
 // Set the date we're counting down to
 
 

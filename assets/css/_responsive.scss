@@ -44,6 +44,62 @@
         }
       }
     }
+    #phone-slide-bar{
+      visibility: hidden;
+      position: fixed;
+      z-index: 11111;
+      top: 60px;
+      width: 0;
+      transition: .8s all;
+      opacity: 0;
+      background-color: black;
+      display: block !important;
+      height: 100vh;      
+      .container{
+        padding: 0 20px !important;
+      }
+      .buttons{
+        button{
+          background-color: black;
+          color: white;
+          padding: 15px 20px;
+        }
+        i{
+          font-size: 20px;
+          background-color: black;
+        }
+      }
+      .contents-buttom{
+        a{
+          display: block;
+          position: relative;
+          padding: 10px 0;
+          color: #ffffff;
+        }
+        li{
+          display: inline;
+          
+          
+        }
+        i{
+          background-color: #373737 !important;
+          padding: 5px;
+          position: absolute;
+          right: 0;
+          font-size: 20px;
+        }
+      }
+      .social-medya{
+        i{
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+      i{
+        font-size: 50px;
+        color: white;
+      }
+    }
   }
   main{
     .sliders{
@@ -164,6 +220,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .top {
       .all {
@@ -211,6 +270,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .buttom {
       display: none;
@@ -278,6 +340,9 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .header-phone {
       display: none;
@@ -373,6 +438,9 @@
   }
 }
 @media (min-width: 1024px) and (max-width: 1140px) {
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .header-phone {
       display: none;
@@ -426,6 +494,9 @@
 }
 
 @media (min-width: 1140px) and (max-width:1400px) {
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .header-phone {
       display: none;
@@ -478,6 +549,9 @@
   }
 }
 @media(min-width:1400px){
+  #phone-slide-bar{
+    display: none;
+  }
   header {
     .header-phone {
       display: none;
