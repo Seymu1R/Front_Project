@@ -46,6 +46,7 @@
     padding: 26px 0;
   }
   header .header-phone .all-phone-header i {
+    cursor: pointer;
     font-size: 30px;
     color: white;
     margin-right: 20px;
@@ -764,6 +765,9 @@
   margin-right: 10px;
   color: #858585;
 }
+#products-index-html .product-items p #product-price {
+  color: #ff6000;
+}
 #products-index-html .product-items img {
   width: 100%;
 }
@@ -879,6 +883,9 @@
 #deals-of-day .mid-right .product-items p span {
   margin-right: 10px;
   color: #858585;
+}
+#deals-of-day .mid-right .product-items p #product-price {
+  color: #ff6000;
 }
 #deals-of-day .mid-right .product-items img {
   width: 100%;

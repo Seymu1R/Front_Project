@@ -26,7 +26,7 @@ function getProductContent(item, type, classNames = "") {
             </div>
             <div class="col-xl-6  col-6">
               <h6>${item.title}</h6>
-              <p>US ${item.price}</p>
+              <p>US$${item.price}</p>
               <div class="raiting">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -46,7 +46,7 @@ function getProductContent(item, type, classNames = "") {
         <span class="span-id" hidden >${item.id}</span>
          <a href="detail.html"><img src="${item.image}" alt=""></a>          
           <a href="">${item.title}</a>
-          <p>US $${item.price} <span>|</span><span>{ 4% off }</span></p>
+          <p>US$${item.price} <span>|</span><span>{ 4% off }</span></p>
           <div class="hover-detail">
             <div class="top"><svg class="svgEye" height="20" width="20" viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@ function getProductContent(item, type, classNames = "") {
       <div class=" product-items">
       <a href="detail.html"><img src="${item.image}" alt=""></a> 
         <a href="">${item.title}</a>
-        <p>US ${item.price} <span>|</span><span>{ 4% off }</span></p>
+        <p>US$ ${item.price} <span>|</span><span>{ 4% off }</span></p>
         <div class="hover-detail">
           <div class="top-hover"><svg class="svgEye" height="20" width="20" viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +140,7 @@ function getProductContent(item, type, classNames = "") {
         <a href="detail.html"> <img class="img-products" src="${item.image}" alt=""/></a> 
        
             <a href="" id="product-title" >${item.title}</a>
-            <p>US $ <span id="product-price">${item.price}</span> <span>|</span><span>{4 % off}</span></p>
+            <p>US$<span id="product-price">${item.price}</span> <span>|</span><span>{4 % off}</span></p>
             <div class="hover-detail">
                 <div class="top"><svg class="svgEye" height="20" width="20" viewBox="0 0 32 32"
                     xmlns="http:www.w3.org/2000/svg">

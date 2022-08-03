@@ -6,6 +6,7 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay:true,
 
     prevArrow: `<button type="button" class="slider-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
     nextArrow: `<button type="button" class="slider-next"><i class="fa-solid fa-arrow-right"></i></button>`,
