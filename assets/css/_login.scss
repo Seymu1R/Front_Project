@@ -1,0 +1,102 @@
+#login-my-accaunt{
+    padding: 100px 0;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        padding: 10px 40px;
+        display: inline;
+        border-radius: 20px;
+
+
+        background-color: white;
+
+        li {
+            cursor: pointer;
+            margin-right: 10px;
+            display: inline;
+            transition: .5s all;
+
+            &:hover {
+                color: rgb(255, 99, 0);
+            }
+
+            &:last-child {
+                color: rgb(255, 99, 0);
+            }
+        }
+    }
+}
+#login-register{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    h2{
+        margin-bottom: 20px;
+    }
+    .pasword{
+        i{
+            font-size: 10px;
+            right: 7px;
+            bottom: 12px;
+        }
+    }
+   
+    input{
+        border: 1px solid #7d7d7d5e ;
+        height: 40px;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;        
+        outline: none;      
+    }
+    #check{
+        position: absolute;
+        width: auto;
+        display: inline;
+        margin-bottom: 0;
+        top: 240px;
+    }
+    a{
+        display: block;
+        margin-top: 20px;
+    }
+    #privacy{
+        display: inline;
+    }
+    button{
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        background-color: #ff6300;
+        border-radius: 5px;
+        transition: .5s all;
+        &:hover{
+            background-color: #2b2b2b;
+        }
+    }
+    label{
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #2b2b2b;
+        margin-bottom: 10px;
+        line-height: 1;
+        font-weight: 500;
+    }
+    span{
+        font-size: 12px;
+        margin-left: 20px;
+        
+        
+    }
+    p{
+        font-size: 15px;
+        color: #7d7d7d;
+       line-height: 50px;
+    }
+}

@@ -1,0 +1,485 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+#detail-shop {
+    .detail-shop {
+        text-align: center;
+        padding: 85px 0;
+
+        h2 {
+            font-size: 45px;
+        }
+
+        ul {
+            justify-content: center;
+            display: flex;
+
+            li {
+                &:last-child {
+                    color: rgb(255, 99, 0);
+                }
+
+                margin-left: 20px;
+                color: #a1a1a1;
+                transition: 1s all;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(255, 99, 0);
+                }
+            }
+
+        }
+    }
+
+}
+
+#detail-product {
+    .detail-product {
+        .left-product {
+
+            position: relative;
+
+            .fa-magnifying-glass {
+                position: absolute;
+                right: 0;
+                top: -20px;
+                color: black;
+                font-size: 20px;
+
+            }
+        }
+
+        .right-product {
+            padding-left: 20px;
+
+            .shop-product-top {
+                i {
+                    color: rgb(110, 118, 115);
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+
+            .raiting-shop {
+                i {
+                    font-size: 13px;
+                    color: rgb(255, 96, 0);
+                }
+
+                span {
+                    font-size: 15px;
+                    color: rgb(4, 101, 210);
+                }
+            }
+
+            h6 {
+                font-size: 26px;
+                font-family: bold;
+                color: rgb(255, 96, 0);
+                padding: 10px 0;
+            }
+
+            p {
+                color: rgb(110, 118, 115);
+            }
+
+            .coming-time {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                .time-count {
+                    background: #252525;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 8px 12px;
+                    border-radius: 4px;
+                    text-align: center;
+                    margin-left: 6px;
+                    width: 52px;
+                    line-height: 1;
+                    margin: 0 3px 0;
+                    padding: 9px 10px;
+                    font-size: 9px;
+                    width: 47px;
+
+                    span {
+                        display: block;
+                        line-height: 1;
+                        font-size: 19px;
+                        font-weight: 700;
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .time-count.sec,
+                .viewed-item-bottom .progress-bar {
+                    background: #f7ba01;
+                }
+
+            }
+        }
+
+        .stock-detail-product {
+            padding: 20px 0;
+
+            p {
+                span {
+                    color: rgb(255, 96, 0);
+                }
+            }
+        }
+
+        .input-count {
+            i {
+                color: rgb(119, 118, 124);
+            }
+
+            input {
+                width: 40px;
+                outline: none;
+                border: none;
+                text-align: center;
+                color: #a1a1a1;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+            }
+
+            button {
+                border: none;
+                width: 200px;
+                color: #ffffff;
+                padding: 10px 27px;
+                background-color: rgb(255, 96, 0);
+            }
+        }
+
+        .compare-wishlist {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+
+            span {
+                margin-right: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(255, 96, 0);
+                }
+            }
+
+            svg {
+                margin-right: 10px;
+
+            }
+
+        }
+
+        .size-guide {
+            svg {
+                max-width: 16px;
+                max-height: 16px;
+                margin-right: 5px;
+
+            }
+
+            a {
+                font-size: 14px;
+                color: black;
+
+                &:hover {
+                    color: rgb(255, 96, 0);
+                }
+            }
+
+        }
+
+        .venam-estimated-delivery {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            svg {
+                max-width: 18px;
+                max-height: 18px;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+        }
+
+        .venam-product-view {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: rgb(119, 118, 124);
+            padding-bottom: 10px;
+
+            svg {
+                max-width: 14px;
+                max-height: 14px;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+
+            span {
+                color: black;
+            }
+        }
+
+        .product_meta {
+            .sku {
+                display: inline;
+            }
+
+            span {
+                display: block;
+                padding: 10px 0;
+
+                a {
+                    color: rgb(119, 118, 124);
+                    font-size: 13px;
+
+                    &:hover {
+                        color: rgb(255, 96, 0);
+                    }
+                }
+            }
+
+        }
+
+        .venam-product-share {
+            margin-bottom: 20px;
+
+            .venam-social-icons {
+                display: inline;
+
+                a {
+                    padding: 8px;
+                    border-radius: 100%;
+                    margin: 0 2px;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#tab-menu {
+    padding: 50px 0;
+
+    .tab {
+        border-bottom: 2px solid #a1a1a1;
+
+        .active {
+            border-bottom: 3px solid #f7ba01;
+        }
+
+        button {
+            border: none;
+            padding: 20px 10px;
+
+        }
+    }
+
+    .menu-info-tr {
+        padding: 40px 0 60px 0;
+    }
+
+    #info {
+
+        tr {
+
+            td {
+                padding: 0 20px;
+            }
+
+        }
+
+    }
+}
+
+#slider-liked{
+    .slick-prev{
+        &::before{
+            color: black;
+            
+        }      
+        
+        top: -40px;
+        left: 1150px !important;
+        
+    }
+    .slick-next{
+        &::before{
+            color:  black;
+            
+        } 
+        
+        top: -40px;
+    }
+    .product-items{
+        position: relative;
+        text-align: center;
+        &:hover{
+            & .hover-detail{
+                opacity: 1;
+                visibility: visible;
+                height: 80px;
+            }
+        }
+        p{
+            color: #ff6000;
+            span{
+                margin-right: 10px;
+                color: #858585;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        .hover-detail{
+            position: absolute;
+            bottom: 65px;
+            left: 30px;
+            width: 160px;
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            transition: .5s all;
+            overflow: hidden;
+            .top{
+                background-color: #ffffff;
+                
+                svg{
+                    margin:  0  15px 10px ;
+                }
+            }
+           
+            button{
+                width: 100%;
+                background-color: #3a3a3a;
+                border: none;              
+
+                color: #ffffff;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+
+
+#product-reviews {
+    padding: 50px 0;
+    img {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .top-review {
+        padding: 50px 0;
+
+
+    }
+    #comment{
+        color: #6e7673;
+    }
+
+    p {
+        #first-star {
+            margin-left: 150px;
+        }
+
+        i {
+
+            color: #ff6000;
+        }
+
+    }
+    .right-side{
+        label{
+            span{
+                color: #ff6000;
+            }
+            font-size: 14px;
+        }
+        select{
+            width: 100% !important;
+            border: 1px solid #a1a1a1;
+            
+            option{
+                ul{
+                    width: 100% !important;
+                }
+               
+            }
+            
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            border: 1px solid var(--theme-gray);
+            padding: 13px 20px;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 160px;
+            transition: .3s;
+            font-size: 14px;
+            color: #7d7d7d;
+            line-height: 1.5;
+        }
+        #input-submit{
+            -webkit-appearance: none;
+    width: 150px;
+    padding: 17px 25px;
+    color: #fff;
+    border: 0;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-image: none;
+    background-color: #ff6000;
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    white-space: nowrap;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+        }
+
+    }
+
+    
+        
+    
+}
